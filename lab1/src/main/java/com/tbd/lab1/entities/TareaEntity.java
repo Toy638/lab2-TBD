@@ -1,8 +1,11 @@
 package com.tbd.lab1.entities;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.tbd.lab1.serializers.PGgeometrySerializer;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import net.postgis.jdbc.PGgeometry;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,6 +16,13 @@ public class TareaEntity {
     private Boolean estado_tarea;
 
     private Long id_emergencia;
+
+    private double latitud;
+
+    private double longitud;
+
+    @JsonSerialize (using = PGgeometrySerializer.class)
+    private PGgeometry geom;
 
     public Long getId_tarea() {
         return id_tarea;
@@ -46,6 +56,22 @@ public class TareaEntity {
         this.id_emergencia = id_emergencia;
     }
 
+    public double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(double latitud) {
+        this.latitud = latitud;
+    }
+
+    public PGgeometry getGeom() {
+        return geom;
+    }
+
+    public void setGeom(PGgeometry geom) {
+        this.geom = geom;
+    }
+
     @Override
     public String toString() {
         return "TareaEntity{" +
@@ -53,6 +79,9 @@ public class TareaEntity {
                 ", asunto_tarea='" + asunto_tarea + '\'' +
                 ", estado_tarea=" + estado_tarea +
                 ", id_emergencia=" + id_emergencia +
+                ", latitud=" + latitud +
+                ", longitud=" + longitud +
+                ", geom=" + geom +
                 '}';
     }
 }

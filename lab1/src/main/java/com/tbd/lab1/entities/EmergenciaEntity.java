@@ -18,7 +18,11 @@ public class EmergenciaEntity {
     private Date fecha;
     public Boolean activa;
     private Integer id_institucion;
+    private double latitud;
+    private double longitud;
 
+    @JsonSerialize (using = PGgeometrySerializer.class)
+    private PGgeometry geom;
 
     public Long getId_emergencia() {
         return id_emergencia;
@@ -76,6 +80,30 @@ public class EmergenciaEntity {
         this.id_institucion = id_institucion;
     }
 
+    public double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(double latitud) {
+        this.latitud = latitud;
+    }
+
+    public double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(double longitud) {
+        this.longitud = longitud;
+    }
+
+    public PGgeometry getGeom() {
+        return geom;
+    }
+
+    public void setGeom(PGgeometry geom) {
+        this.geom = geom;
+    }
+
 
 
 
@@ -89,6 +117,9 @@ public class EmergenciaEntity {
                 ", fecha=" + fecha +
                 ", activa=" + activa +
                 ", id_institucion=" + id_institucion +
+                ", latitud=" + latitud +
+                ", longitud=" + longitud +
+                ", geom=" + geom +
                 '}';
     }
 }

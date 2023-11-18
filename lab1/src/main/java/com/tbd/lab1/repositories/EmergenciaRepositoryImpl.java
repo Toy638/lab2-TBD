@@ -12,6 +12,7 @@ import org.sql2o.Sql2o;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.data.geo.Point;
 
 @Repository
 public class EmergenciaRepositoryImpl implements EmergenciaRepository{
@@ -37,7 +38,7 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
 
-        String sqlQuery = "INSERT INTO emergencia (asunto, fecha, descripcion, direccion, activa, id_institucion) VALUES (:asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion)";
+        String sqlQuery = "INSERT INTO emergencia (asunto, fecha, descripcion, direccion, activa, id_institucion, latitud, longitud) VALUES (:asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion, :latitud, :longitud)";
         try (Connection con = sql2o.beginTransaction()) {
 
             con.createQuery(sqlQuery)
@@ -47,12 +48,19 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
                     .addParameter("direccion", emergencia.getDireccion())
                     .addParameter("activa", emergencia.getActiva())
                     .addParameter("id_institucion", emergencia.getId_institucion())
+                    .addParameter("latitud", emergencia.getLatitud())
+                    .addParameter("longitud", emergencia.getLongitud())
+                    .addParameter("geom", new Point(emergencia.getLongitud(), emergencia.getLatitud()))
                     .executeUpdate();
             con.commit();
         }
         return null;
     }
 
+    @Override
+    public void UpdateGeom(Long longitud, Long latitud){
+        return null;
+    }
     @Override
     public EmergenciaEntity findById(Long id_emergencia) {
         String sqlQuery = "SELECT * FROM emergencia WHERE id_emergencia = :id_emergencia";
@@ -78,7 +86,7 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
 
     @Override
     public EmergenciaEntity update(EmergenciaEntity emergencia) {
-        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion = :idInstitucion WHERE id_emergencia = :idEmergencia";
+        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion, latitud = :latitud, longitud = :longitud = :idInstitucion WHERE id_emergencia = :idEmergencia";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             String username = authentication.getName();
@@ -94,6 +102,9 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
                     .addParameter("fecha", emergencia.getFecha())
                     .addParameter("activa", emergencia.getActiva())
                     .addParameter("idInstitucion", emergencia.getId_institucion())
+                    .addParameter("latitud", emergencia.getLatitud())
+                    .addParameter("longitud", emergencia.getLongitud())
+                    .addParameter("geom", new Point(emergencia.getLongitud(), emergencia.getLatitud()))
                     .executeUpdate();
             con.commit();
 
