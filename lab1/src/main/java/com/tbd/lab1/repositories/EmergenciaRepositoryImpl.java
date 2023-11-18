@@ -1,5 +1,6 @@
 package com.tbd.lab1.repositories;
 import com.tbd.lab1.entities.EmergenciaEntity;
+import net.postgis.jdbc.geometry.Point;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import org.sql2o.Sql2o;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.springframework.data.geo.Point;
+// import org.springframework.data.geo.Point;
 
 @Repository
 public class EmergenciaRepositoryImpl implements EmergenciaRepository{
@@ -38,10 +39,13 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
 
-        String sqlQuery = "INSERT INTO emergencia (asunto, fecha, descripcion, direccion, activa, id_institucion, latitud, longitud) VALUES (:asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion, :latitud, :longitud)";
+        String sqlQuery = "INSERT INTO emergencia (id_emergencia, asunto, fecha, descripcion, direccion, activa, id_institucion, latitud, longitud, geom) " +
+                "VALUES (:id_emergencia, :asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion, :latitud, :longitud, ST_GeomFromText(:point, 4326))";
+
         try (Connection con = sql2o.beginTransaction()) {
 
             con.createQuery(sqlQuery)
+                    .addParameter("id_emergencia", emergencia.getId_emergencia())
                     .addParameter("asunto", emergencia.getAsunto())
                     .addParameter("fecha", emergencia.getFecha())
                     .addParameter("descripcion", emergencia.getDescripcion())
@@ -50,17 +54,20 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
                     .addParameter("id_institucion", emergencia.getId_institucion())
                     .addParameter("latitud", emergencia.getLatitud())
                     .addParameter("longitud", emergencia.getLongitud())
-                    .addParameter("geom", new Point(emergencia.getLongitud(), emergencia.getLatitud()))
+                    .addParameter("point", "POINT(" + emergencia.getLongitud() + " " + emergencia.getLatitud() + ")")
                     .executeUpdate();
+
             con.commit();
+        } catch (Exception e) {
+            // Manejo de excepciones, por ejemplo, loggear el error.
+            e.printStackTrace();
+            // También podrías lanzar una excepción personalizada si lo consideras necesario.
         }
-        return null;
+
+        return emergencia;
     }
 
-    @Override
-    public void UpdateGeom(Long longitud, Long latitud){
-        return null;
-    }
+
     @Override
     public EmergenciaEntity findById(Long id_emergencia) {
         String sqlQuery = "SELECT * FROM emergencia WHERE id_emergencia = :id_emergencia";

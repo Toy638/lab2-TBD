@@ -13,7 +13,6 @@ public interface EmergenciaRepository {
     public EmergenciaEntity update(EmergenciaEntity emergencia);
     public void delete(Long id);
     public EmergenciaEntity getFinalId();
-    public void UpdateGeom(Long longitud, Long latitud);
     void cambiarEstado(Long id);
 
     int countTareasByEmergencia(Long id);

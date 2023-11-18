@@ -30,9 +30,7 @@ public class SecurityConfig {
     SecurityFilterChain web(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/api/login","/api/register").permitAll()
-                        .requestMatchers("/api/emergencia/crear", "/api/habilidades/create", "/api/habilidades/listar").hasRole("COORDINADOR")
-                        .requestMatchers("/api/emergencia", "/api/instituciones").hasAnyRole("VOLUNTARIO", "COORDINADOR")
+
                         .anyRequest().permitAll()
                 )
                 .cors(withDefaults())
