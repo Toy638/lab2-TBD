@@ -1,0 +1,13 @@
+com/tbd/lab1/config/Sql2oConfiguration.class
+com/tbd/lab1/config/security/services/UserDetailsServiceImpl.class
+com/tbd/lab1/config/security/services/JwtUtilService.class
+com/tbd/lab1/config/security/model/TokenInfo.class
+com/tbd/lab1/serializers/PGgeometrySerializer.class
+com/tbd/lab1/repositories/UsuarioRepository.class
+com/tbd/lab1/config/security/filters/JwtRequestFilter.class
+com/tbd/lab1/Lab1Application.class
+com/tbd/lab1/repositories/UsuarioRepositoryImpl.class
+com/tbd/lab1/config/security/model/AuthenticationReq.class
+com/tbd/lab1/config/security/SecurityConfig.class
+com/tbd/lab1/controllers/UsuarioController.class
+com/tbd/lab1/entities/UsuarioEntity.class

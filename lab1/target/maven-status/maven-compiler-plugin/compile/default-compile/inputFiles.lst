@@ -1,0 +1,13 @@
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/repositories/UsuarioRepository.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/model/TokenInfo.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/entities/UsuarioEntity.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/controllers/UsuarioController.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/Lab1Application.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/services/UserDetailsServiceImpl.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/SecurityConfig.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/filters/JwtRequestFilter.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/services/JwtUtilService.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/security/model/AuthenticationReq.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/serializers/PGgeometrySerializer.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/config/Sql2oConfiguration.java
+/home/t4nk/workspace/TBD/lab1/src/main/java/com/tbd/lab1/repositories/UsuarioRepositoryImpl.java
