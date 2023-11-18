@@ -93,14 +93,10 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
 
     @Override
     public EmergenciaEntity update(EmergenciaEntity emergencia) {
-        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion, latitud = :latitud, longitud = :longitud = :idInstitucion WHERE id_emergencia = :idEmergencia";
+        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion = :idInstitucion, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 4326) WHERE id_emergencia = :idEmergencia";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            con.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
+
             con.createQuery(sqlQuery)
                     .addParameter("idEmergencia", emergencia.getId_emergencia())
                     .addParameter("asunto", emergencia.getAsunto())
@@ -111,7 +107,7 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
                     .addParameter("idInstitucion", emergencia.getId_institucion())
                     .addParameter("latitud", emergencia.getLatitud())
                     .addParameter("longitud", emergencia.getLongitud())
-                    .addParameter("geom", new Point(emergencia.getLongitud(), emergencia.getLatitud()))
+                    .addParameter("point", "POINT(" + emergencia.getLongitud() + " " + emergencia.getLatitud() + ")")
                     .executeUpdate();
             con.commit();
 

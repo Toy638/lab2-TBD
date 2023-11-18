@@ -36,14 +36,14 @@ public class TareaController{
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    @PutMapping("/{idTarea}")
+    @PutMapping("/update/{idTarea}")
     public ResponseEntity<Void> update(@PathVariable Long idTarea, @RequestBody TareaEntity tarea){
         tarea.setId_tarea(idTarea);
         tareaRepository.update(tarea);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @DeleteMapping("/{idTarea}")
+    @DeleteMapping("/delete/{idTarea}")
     public ResponseEntity<Void> delete(@PathVariable Long idTarea){
         tareaRepository.delete(idTarea);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);

@@ -19,20 +19,19 @@ public class TareaRepositoryImpl implements TareaRepository{
 
     @Override
     public void create(TareaEntity tarea) {
-        String sqlQuery = "INSERT INTO tarea (id_tarea, asunto_tarea, id_emergencia, estado_tarea) VALUES (:idTarea, :asuntoTarea, :idEmergencia, :estadoTarea)";
+        String sqlQuery = "INSERT INTO tarea (id_tarea, asunto_tarea, id_emergencia, estado_tarea, latitud, longitud, geom) VALUES (:idTarea, :asuntoTarea, :idEmergencia, :estadoTarea, :latitud, :longitud, ST_GeomFromText(:point, 4326))";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            con.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
+
 
             con.createQuery(sqlQuery)
                     .addParameter("idTarea", tarea.getId_tarea())
                     .addParameter("asuntoTarea", tarea.getAsunto_tarea())
                     .addParameter("idEmergencia", tarea.getId_emergencia())
                     .addParameter("estadoTarea", tarea.getEstado_tarea())
+                    .addParameter("latitud", tarea.getLatitud())
+                    .addParameter("longitud", tarea.getLongitud())
+                    .addParameter("point", "POINT(" + tarea.getLongitud() + " " + tarea.getLatitud() + ")")
                     .executeUpdate();
             con.commit();
         } catch (Exception e) {
@@ -110,20 +109,19 @@ public class TareaRepositoryImpl implements TareaRepository{
 
     @Override
     public void update(TareaEntity tarea) {
-        String sqlQuery = "UPDATE tarea SET asunto_tarea = :asuntoTarea, id_emergencia = :idEmergencia, estado_tarea = :estadoTarea WHERE id_tarea = :idTarea";
+        String sqlQuery = "UPDATE tarea SET asunto_tarea = :asuntoTarea, id_emergencia = :idEmergencia, estado_tarea = :estadoTarea, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 4326) WHERE id_tarea = :idTarea";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            con.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
+
 
             con.createQuery(sqlQuery)
                     .addParameter("asuntoTarea", tarea.getAsunto_tarea())
                     .addParameter("idEmergencia", tarea.getId_emergencia())
                     .addParameter("estadoTarea", tarea.getEstado_tarea())
                     .addParameter("idTarea", tarea.getId_tarea())
+                    .addParameter("latitud", tarea.getLatitud())
+                    .addParameter("longitud", tarea.getLongitud())
+                    .addParameter("point", "POINT(" + tarea.getLongitud() + " " + tarea.getLatitud() + ")")
                     .executeUpdate();
             con.commit();
         } catch (Exception e) {
