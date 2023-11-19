@@ -1,21 +1,22 @@
 package com.tbd.lab1.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.tbd.lab1.serializers.PGgeometryDeserializer;
 import com.tbd.lab1.serializers.PGgeometrySerializer;
 import net.postgis.jdbc.PGgeometry;
 
+import java.util.List;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RegionEntity {
 
     private Long id;
     private String nombre;
-
     @JsonSerialize(using = PGgeometrySerializer.class)
-    //@JsonDeserialize(using = PGgeometryDeserializer.class)
+    @JsonDeserialize(using = PGgeometryDeserializer.class)
     private PGgeometry geom;
-
-
 
     public Long getId_region() {
         return id;

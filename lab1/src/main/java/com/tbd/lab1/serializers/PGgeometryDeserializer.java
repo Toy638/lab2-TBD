@@ -25,6 +25,22 @@ public class PGgeometryDeserializer extends StdDeserializer<PGgeometry> {
 
         JsonNode node = jp.getCodec().readTree(jp);
 
+
+// Verificar si el JSON tiene la estructura de coordenadas
+        if (node.has("coordinates")) {
+            // Extraer las coordenadas del JSON
+            JsonNode coordinatesNode = node.get("coordinates");
+            if (coordinatesNode.isArray() && coordinatesNode.size() > 0) {
+                JsonNode firstCoordinateNode = coordinatesNode.get(0);
+                if (firstCoordinateNode.isArray() && firstCoordinateNode.size() == 2) {
+                    double lat = firstCoordinateNode.get(0).asDouble();
+                    double lon = firstCoordinateNode.get(1).asDouble();
+                    Point point = new Point(lon, lat);
+                    return new PGgeometry(point);
+                }
+            }
+        }
+
         double lat = node.get("lat").asDouble();
         double lon = node.get("lon").asDouble();
 

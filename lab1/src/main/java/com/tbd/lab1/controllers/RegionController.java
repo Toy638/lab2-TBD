@@ -40,7 +40,6 @@ public class RegionController {
             // Deserializar el JSON utilizando tu deserializador personalizado
             ObjectMapper objectMapper = new ObjectMapper();
             RegionEntity region = objectMapper.readValue(regionJson, RegionEntity.class);
-
             // Luego, puedes almacenar o procesar la entidad RegionEntity según sea necesario
             regionRepository.create(region);
 

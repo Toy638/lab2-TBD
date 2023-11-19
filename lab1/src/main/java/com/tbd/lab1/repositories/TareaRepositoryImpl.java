@@ -19,7 +19,7 @@ public class TareaRepositoryImpl implements TareaRepository{
 
     @Override
     public void create(TareaEntity tarea) {
-        String sqlQuery = "INSERT INTO tarea (id_tarea, asunto_tarea, id_emergencia, estado_tarea, latitud, longitud, geom) VALUES (:idTarea, :asuntoTarea, :idEmergencia, :estadoTarea, :latitud, :longitud, ST_GeomFromText(:point, 4326))";
+        String sqlQuery = "INSERT INTO tarea (id_tarea, asunto_tarea, id_emergencia, estado_tarea, latitud, longitud, geom) VALUES (:idTarea, :asuntoTarea, :idEmergencia, :estadoTarea, :latitud, :longitud, ST_GeomFromText(:point, 32719))";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
@@ -134,11 +134,7 @@ public class TareaRepositoryImpl implements TareaRepository{
         String sqlQuery = "DELETE FROM tarea WHERE id_tarea = :id_tarea";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            con.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
+
 
             con.createQuery(sqlQuery)
                     .addParameter("id_tarea", id_tarea)
