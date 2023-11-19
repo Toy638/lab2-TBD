@@ -3,26 +3,26 @@
 
 INSERT INTO institucion (id_institucion, nombre, fecha, direccion, telefono)
 VALUES
-  (1, 'Vandervort-Dach', '2023-10-09', 'Đà Bắc', '+84-401-137-7229'),
-  (2, 'Schimmel-Legros', '2022-04-26', 'Hongyansi', '+86-419-667-1586'),
-  (3, 'Kohler-Kuhn', '2023-06-06', 'Lima', '+51-156-305-5276'),
-  (4, 'Bogan LLC', '2020-12-16', 'Shancheng', '+86-273-799-7859'),
-  (5, 'Wuckert, Schoen and Jacobs', '2021-12-20', 'Tessaoua', '+227-389-985-0436'),
-  (6, 'Hartmann, Hermann and Lynch', '2022-06-05', 'Chư Prông', '+84-126-261-0308'),
-  (7, 'Ortiz-Beer', '2020-05-04', 'Solsona', '+63-161-526-0721'),
-  (8, 'Dibbert and Sons', '2022-08-03', 'Wiślica', '+48-604-405-5601'),
-  (9, 'Klein LLC', '2020-02-05', 'Monte Novo', '+351-607-943-5053'),
-  (10, 'Kuhic-Kling', '2022-03-27', 'Rzozów', '+48-346-926-4313'),
-  (11, 'Donnelly Inc', '2022-06-17', 'Krajan', '+62-625-819-2052'),
-  (12, 'Bosco, Thompson and Maggio', '2019-12-06', 'Jiulong', '+86-647-544-1395'),
-  (13, 'Sauer, Cummings and Mante', '2022-02-15', 'Palaífyto', '+30-681-175-2472'),
-  (14, 'Rosenbaum, Wunsch and Satterfield', '2022-04-16', 'Yarīm', '+967-689-503-6665'),
-  (15, 'Hilpert LLC', '2020-10-05', 'Lampihung', '+62-867-894-2476'),
-  (16, 'Stroman, Mitchell and Hyatt', '2020-06-04', 'Az Zāhir', '+967-940-727-0440'),
-  (17, 'Friesen, Tillman and Quitzon', '2021-04-04', 'Lhuentse', '+975-982-717-9503'),
-  (18, 'Lakin-Moore', '2022-08-25', 'Nagano-shi', '+81-530-902-8623'),
-  (19, 'Sawayn, O''Hara and Sporer', '2021-03-29', 'Falun', '+46-539-900-9186'),
-  (20, 'Monahan Group', '2020-12-14', 'Xinwu', '+86-712-325-1609');
+    (1, 'Vandervort-Dach', '2023-10-09', 'Đà Bắc', '+84-401-137-7229'),
+    (2, 'Schimmel-Legros', '2022-04-26', 'Hongyansi', '+86-419-667-1586'),
+    (3, 'Kohler-Kuhn', '2023-06-06', 'Lima', '+51-156-305-5276'),
+    (4, 'Bogan LLC', '2020-12-16', 'Shancheng', '+86-273-799-7859'),
+    (5, 'Wuckert, Schoen and Jacobs', '2021-12-20', 'Tessaoua', '+227-389-985-0436'),
+    (6, 'Hartmann, Hermann and Lynch', '2022-06-05', 'Chư Prông', '+84-126-261-0308'),
+    (7, 'Ortiz-Beer', '2020-05-04', 'Solsona', '+63-161-526-0721'),
+    (8, 'Dibbert and Sons', '2022-08-03', 'Wiślica', '+48-604-405-5601'),
+    (9, 'Klein LLC', '2020-02-05', 'Monte Novo', '+351-607-943-5053'),
+    (10, 'Kuhic-Kling', '2022-03-27', 'Rzozów', '+48-346-926-4313'),
+    (11, 'Donnelly Inc', '2022-06-17', 'Krajan', '+62-625-819-2052'),
+    (12, 'Bosco, Thompson and Maggio', '2019-12-06', 'Jiulong', '+86-647-544-1395'),
+    (13, 'Sauer, Cummings and Mante', '2022-02-15', 'Palaífyto', '+30-681-175-2472'),
+    (14, 'Rosenbaum, Wunsch and Satterfield', '2022-04-16', 'Yarīm', '+967-689-503-6665'),
+    (15, 'Hilpert LLC', '2020-10-05', 'Lampihung', '+62-867-894-2476'),
+    (16, 'Stroman, Mitchell and Hyatt', '2020-06-04', 'Az Zāhir', '+967-940-727-0440'),
+    (17, 'Friesen, Tillman and Quitzon', '2021-04-04', 'Lhuentse', '+975-982-717-9503'),
+    (18, 'Lakin-Moore', '2022-08-25', 'Nagano-shi', '+81-530-902-8623'),
+    (19, 'Sawayn, O''Hara and Sporer', '2021-03-29', 'Falun', '+46-539-900-9186'),
+    (20, 'Monahan Group', '2020-12-14', 'Xinwu', '+86-712-325-1609');
 
 
 select * from institucion;
@@ -30,103 +30,103 @@ select * from institucion;
 --usuario
 insert into usuario (id, email, password, rol, id_institucion) values (1, 'agitsham0@google.pl', 'hG8''', 'VOLUNTARIO', '11');
 insert into usuario (id, email, password, rol, id_institucion) values (2, 'hsnookes1@earthlink.net', 'bV3$fh', 'VOLUNTARIO', '15');
-insert into usuario (id, email, password, rol, id_institucion) values (3, 'mmaccrosson2@printfriendly.com', 'wH6_aw', 'INSTITUCION', '12');
+insert into usuario (id, email, password, rol, id_institucion) values (3, 'mmaccrosson2@printfriendly.com', 'wH6_aw', 'COORDINADOR', '12');
 insert into usuario (id, email, password, rol, id_institucion) values (4, 'ociccetti3@issuu.com', 'bS0#W', 'VOLUNTARIO', '19');
 insert into usuario (id, email, password, rol, id_institucion) values (5, 'dschapero4@desdev.cn', 'gA8\6_+Q', 'VOLUNTARIO', '6');
 insert into usuario (id, email, password, rol, id_institucion) values (6, 'ecranch5@fotki.com', 'xO7~#', 'VOLUNTARIO', '5');
-insert into usuario (id, email, password, rol, id_institucion) values (7, 'gbayliss6@google.com', 'jY3*M', 'INSTITUCION', '9');
+insert into usuario (id, email, password, rol, id_institucion) values (7, 'gbayliss6@google.com', 'jY3*M', 'COORDINADOR', '9');
 insert into usuario (id, email, password, rol, id_institucion) values (8, 'rethridge7@cisco.com', 'kD7.O9YU', 'VOLUNTARIO', '8');
 insert into usuario (id, email, password, rol, id_institucion) values (9, 'kluquet8@unesco.org', 'qY8}', 'VOLUNTARIO', '10');
-insert into usuario (id, email, password, rol, id_institucion) values (10, 'jstenson9@wikipedia.org', 'bU9)2N+r', 'INSTITUCION', '17');
-insert into usuario (id, email, password, rol, id_institucion) values (11, 'acrinagea@ask.com', 'rD3}85', 'INSTITUCION', '13');
-insert into usuario (id, email, password, rol, id_institucion) values (12, 'wwoodingtonb@columbia.edu', 'uB6}Df2Q', 'INSTITUCION', '1');
+insert into usuario (id, email, password, rol, id_institucion) values (10, 'jstenson9@wikipedia.org', 'bU9)2N+r', 'COORDINADOR', '17');
+insert into usuario (id, email, password, rol, id_institucion) values (11, 'acrinagea@ask.com', 'rD3}85', 'COORDINADOR', '13');
+insert into usuario (id, email, password, rol, id_institucion) values (12, 'wwoodingtonb@columbia.edu', 'uB6}Df2Q', 'COORDINADOR', '1');
 insert into usuario (id, email, password, rol, id_institucion) values (13, 'besslementc@hubpages.com', 'bW0''\~', 'VOLUNTARIO', '7');
-insert into usuario (id, email, password, rol, id_institucion) values (14, 'fchalonerd@squarespace.com', 'nK8''#%Qd', 'INSTITUCION', '20');
+insert into usuario (id, email, password, rol, id_institucion) values (14, 'fchalonerd@squarespace.com', 'nK8''#%Qd', 'COORDINADOR', '20');
 insert into usuario (id, email, password, rol, id_institucion) values (15, 'wastine@nba.com', 'iL2#<_d=', 'VOLUNTARIO', '14');
-insert into usuario (id, email, password, rol, id_institucion) values (16, 'ncluesf@privacy.gov.au', 'dS9#J|', 'INSTITUCION', '2');
-insert into usuario (id, email, password, rol, id_institucion) values (17, 'bsandisong@cisco.com', 'hE6(', 'INSTITUCION', '3');
+insert into usuario (id, email, password, rol, id_institucion) values (16, 'ncluesf@privacy.gov.au', 'dS9#J|', 'COORDINADOR', '2');
+insert into usuario (id, email, password, rol, id_institucion) values (17, 'bsandisong@cisco.com', 'hE6(', 'COORDINADOR', '3');
 insert into usuario (id, email, password, rol, id_institucion) values (18, 'hfennh@army.mil', 'mB5@9vm|', 'VOLUNTARIO', '18');
 insert into usuario (id, email, password, rol, id_institucion) values (19, 'chritzkoi@elpais.com', 'cN0(O', 'VOLUNTARIO', '4');
-insert into usuario (id, email, password, rol, id_institucion) values (20, 'rtorrentj@google.pl', 'gD0\RDbc', 'INSTITUCION', '16');
-insert into usuario (id, email, password, rol, id_institucion) values (21, 'kslyk@trellian.com', 'lT0~J', 'INSTITUCION', '1');
-insert into usuario (id, email, password, rol, id_institucion) values (22, 'kwoodingtonl@histats.com', 'iP5+W', 'INSTITUCION', '3');
+insert into usuario (id, email, password, rol, id_institucion) values (20, 'rtorrentj@google.pl', 'gD0\RDbc', 'COORDINADOR', '16');
+insert into usuario (id, email, password, rol, id_institucion) values (21, 'kslyk@trellian.com', 'lT0~J', 'COORDINADOR', '1');
+insert into usuario (id, email, password, rol, id_institucion) values (22, 'kwoodingtonl@histats.com', 'iP5+W', 'COORDINADOR', '3');
 insert into usuario (id, email, password, rol, id_institucion) values (23, 'jwoodthorpem@123-reg.co.uk', 'eI0<bvz5', 'VOLUNTARIO', '6');
 insert into usuario (id, email, password, rol, id_institucion) values (24, 'owigleyn@dyndns.org', 'rB4|UZ', 'VOLUNTARIO', '11');
 insert into usuario (id, email, password, rol, id_institucion) values (25, 'mtiverso@dyndns.org', 'lJ0|a', 'VOLUNTARIO', '19');
-insert into usuario (id, email, password, rol, id_institucion) values (26, 'ccattrellp@timesonline.co.uk', 'jR8''VI@{', 'INSTITUCION', '13');
-insert into usuario (id, email, password, rol, id_institucion) values (27, 'ncliffq@theguardian.com', 'mT0#Y66%', 'INSTITUCION', '18');
+insert into usuario (id, email, password, rol, id_institucion) values (26, 'ccattrellp@timesonline.co.uk', 'jR8''VI@{', 'COORDINADOR', '13');
+insert into usuario (id, email, password, rol, id_institucion) values (27, 'ncliffq@theguardian.com', 'mT0#Y66%', 'COORDINADOR', '18');
 insert into usuario (id, email, password, rol, id_institucion) values (28, 'rkelmerer@theatlantic.com', 'hG7@0J1', 'VOLUNTARIO', '14');
-insert into usuario (id, email, password, rol, id_institucion) values (29, 'nsikoras@phpbb.com', 'cM2#v', 'INSTITUCION', '8');
+insert into usuario (id, email, password, rol, id_institucion) values (29, 'nsikoras@phpbb.com', 'cM2#v', 'COORDINADOR', '8');
 insert into usuario (id, email, password, rol, id_institucion) values (30, 'cmiddlemisst@fema.gov', 'qZ8$sw', 'VOLUNTARIO', '15');
 insert into usuario (id, email, password, rol, id_institucion) values (31, 'tcostiganu@google.com.br', 'qG4~JgdZ', 'VOLUNTARIO', '20');
 insert into usuario (id, email, password, rol, id_institucion) values (32, 'bvillav@tinypic.com', 'eR2.T(nO', 'VOLUNTARIO', '12');
 insert into usuario (id, email, password, rol, id_institucion) values (33, 'nkrusew@simplemachines.org', 'mJ2#qJv', 'VOLUNTARIO', '5');
-insert into usuario (id, email, password, rol, id_institucion) values (34, 'kgajewskix@php.net', 'tW8>AD', 'INSTITUCION', '7');
+insert into usuario (id, email, password, rol, id_institucion) values (34, 'kgajewskix@php.net', 'tW8>AD', 'COORDINADOR', '7');
 insert into usuario (id, email, password, rol, id_institucion) values (35, 'gkaspary@bbc.co.uk', 'pD2%9(', 'VOLUNTARIO', '4');
 insert into usuario (id, email, password, rol, id_institucion) values (36, 'kpragnallz@dion.ne.jp', 'wQ1?bdd', 'VOLUNTARIO', '17');
-insert into usuario (id, email, password, rol, id_institucion) values (37, 'nklimov10@boston.com', 'zI0\e', 'INSTITUCION', '16');
-insert into usuario (id, email, password, rol, id_institucion) values (38, 'fmerchant11@archive.org', 'lT8*\q', 'INSTITUCION', '2');
-insert into usuario (id, email, password, rol, id_institucion) values (39, 'rvasilchenko12@mit.edu', 'nN0.p', 'INSTITUCION', '10');
-insert into usuario (id, email, password, rol, id_institucion) values (40, 'dneubigin13@sbwire.com', 'xR7"7w', 'INSTITUCION', '9');
+insert into usuario (id, email, password, rol, id_institucion) values (37, 'nklimov10@boston.com', 'zI0\e', 'COORDINADOR', '16');
+insert into usuario (id, email, password, rol, id_institucion) values (38, 'fmerchant11@archive.org', 'lT8*\q', 'COORDINADOR', '2');
+insert into usuario (id, email, password, rol, id_institucion) values (39, 'rvasilchenko12@mit.edu', 'nN0.p', 'COORDINADOR', '10');
+insert into usuario (id, email, password, rol, id_institucion) values (40, 'dneubigin13@sbwire.com', 'xR7"7w', 'COORDINADOR', '9');
 insert into usuario (id, email, password, rol, id_institucion) values (41, 'nmoss14@chron.com', 'qL4~G', 'VOLUNTARIO', '17');
-insert into usuario (id, email, password, rol, id_institucion) values (42, 'cpurviss15@whitehouse.gov', 'yT4{Du/', 'INSTITUCION', '18');
-insert into usuario (id, email, password, rol, id_institucion) values (43, 'kmcclifferty16@oracle.com', 'tQ6.59L', 'INSTITUCION', '12');
+insert into usuario (id, email, password, rol, id_institucion) values (42, 'cpurviss15@whitehouse.gov', 'yT4{Du/', 'COORDINADOR', '18');
+insert into usuario (id, email, password, rol, id_institucion) values (43, 'kmcclifferty16@oracle.com', 'tQ6.59L', 'COORDINADOR', '12');
 insert into usuario (id, email, password, rol, id_institucion) values (44, 'cwalkowski17@usatoday.com', 'sX0*', 'VOLUNTARIO', '10');
-insert into usuario (id, email, password, rol, id_institucion) values (45, 'eclunan18@purevolume.com', 'dW2#(<', 'INSTITUCION', '2');
+insert into usuario (id, email, password, rol, id_institucion) values (45, 'eclunan18@purevolume.com', 'dW2#(<', 'COORDINADOR', '2');
 insert into usuario (id, email, password, rol, id_institucion) values (46, 'gclayfield19@merriam-webster.com', 'lD9"tWg`', 'VOLUNTARIO', '1');
 insert into usuario (id, email, password, rol, id_institucion) values (47, 'rsacase1a@friendfeed.com', 'kQ2\', 'VOLUNTARIO', '11');
-insert into usuario (id, email, password, rol, id_institucion) values (48, 'mkybird1b@alibaba.com', 'wT7=|', 'INSTITUCION', '19');
+insert into usuario (id, email, password, rol, id_institucion) values (48, 'mkybird1b@alibaba.com', 'wT7=|', 'COORDINADOR', '19');
 insert into usuario (id, email, password, rol, id_institucion) values (49, 'mhacard1c@rakuten.co.jp', 'oM2>Gc', 'VOLUNTARIO', '6');
-insert into usuario (id, email, password, rol, id_institucion) values (50, 'dalf1d@nasa.gov', 'kT5|SN@2', 'INSTITUCION', '7');
+insert into usuario (id, email, password, rol, id_institucion) values (50, 'dalf1d@nasa.gov', 'kT5|SN@2', 'COORDINADOR', '7');
 insert into usuario (id, email, password, rol, id_institucion) values (51, 'vpiatto1e@miibeian.gov.cn', 'mT8~', 'VOLUNTARIO', '3');
-insert into usuario (id, email, password, rol, id_institucion) values (52, 'cpietri1f@bloglines.com', 'pJ8(', 'INSTITUCION', '15');
-insert into usuario (id, email, password, rol, id_institucion) values (53, 'lhelmke1g@tiny.cc', 'jH1&50r', 'INSTITUCION', '20');
+insert into usuario (id, email, password, rol, id_institucion) values (52, 'cpietri1f@bloglines.com', 'pJ8(', 'COORDINADOR', '15');
+insert into usuario (id, email, password, rol, id_institucion) values (53, 'lhelmke1g@tiny.cc', 'jH1&50r', 'COORDINADOR', '20');
 insert into usuario (id, email, password, rol, id_institucion) values (54, 'bcullen1h@istockphoto.com', 'qI5!sNK}', 'VOLUNTARIO', '14');
-insert into usuario (id, email, password, rol, id_institucion) values (55, 'tborless1i@ocn.ne.jp', 'wV6>j3oI', 'INSTITUCION', '5');
-insert into usuario (id, email, password, rol, id_institucion) values (56, 'obugler1j@seesaa.net', 'kU9+9', 'INSTITUCION', '4');
+insert into usuario (id, email, password, rol, id_institucion) values (55, 'tborless1i@ocn.ne.jp', 'wV6>j3oI', 'COORDINADOR', '5');
+insert into usuario (id, email, password, rol, id_institucion) values (56, 'obugler1j@seesaa.net', 'kU9+9', 'COORDINADOR', '4');
 insert into usuario (id, email, password, rol, id_institucion) values (57, 'aleason1k@google.com.br', 'oE5$', 'VOLUNTARIO', '8');
 insert into usuario (id, email, password, rol, id_institucion) values (58, 'ygres1l@squarespace.com', 'kQ1&pp5', 'VOLUNTARIO', '13');
 insert into usuario (id, email, password, rol, id_institucion) values (59, 'aalyonov1m@storify.com', 'bE0!7', 'VOLUNTARIO', '9');
 insert into usuario (id, email, password, rol, id_institucion) values (60, 'brawlin1n@ocn.ne.jp', 'sY4<w', 'VOLUNTARIO', '16');
-insert into usuario (id, email, password, rol, id_institucion) values (61, 'dgamlin1o@discovery.com', 'eQ6\><"', 'INSTITUCION', '9');
-insert into usuario (id, email, password, rol, id_institucion) values (62, 'mwannop1p@histats.com', 'iM9(=l', 'INSTITUCION', '10');
+insert into usuario (id, email, password, rol, id_institucion) values (61, 'dgamlin1o@discovery.com', 'eQ6\><"', 'COORDINADOR', '9');
+insert into usuario (id, email, password, rol, id_institucion) values (62, 'mwannop1p@histats.com', 'iM9(=l', 'COORDINADOR', '10');
 insert into usuario (id, email, password, rol, id_institucion) values (63, 'akording1q@gnu.org', 'bP9.9)R', 'VOLUNTARIO', '11');
 insert into usuario (id, email, password, rol, id_institucion) values (64, 'jherrieven1r@businessweek.com', 'eF2''', 'VOLUNTARIO', '14');
-insert into usuario (id, email, password, rol, id_institucion) values (65, 'bdoogue1s@ucoz.com', 'zB5(rKb', 'INSTITUCION', '6');
+insert into usuario (id, email, password, rol, id_institucion) values (65, 'bdoogue1s@ucoz.com', 'zB5(rKb', 'COORDINADOR', '6');
 insert into usuario (id, email, password, rol, id_institucion) values (66, 'jbagley1t@marriott.com', 'iU0~', 'VOLUNTARIO', '18');
-insert into usuario (id, email, password, rol, id_institucion) values (67, 'igalego1u@blogs.com', 'nU0''J', 'INSTITUCION', '3');
+insert into usuario (id, email, password, rol, id_institucion) values (67, 'igalego1u@blogs.com', 'nU0''J', 'COORDINADOR', '3');
 insert into usuario (id, email, password, rol, id_institucion) values (68, 'gekins1v@wikimedia.org', 'oS5+', 'VOLUNTARIO', '1');
 insert into usuario (id, email, password, rol, id_institucion) values (69, 'zschechter1w@cornell.edu', 'gZ7)SKX', 'VOLUNTARIO', '16');
-insert into usuario (id, email, password, rol, id_institucion) values (70, 'eteers1x@go.com', 'dK5#}z', 'INSTITUCION', '4');
-insert into usuario (id, email, password, rol, id_institucion) values (71, 'alinde1y@cpanel.net', 'bO4_', 'INSTITUCION', '12');
-insert into usuario (id, email, password, rol, id_institucion) values (72, 'sscowcraft1z@economist.com', 'hJ0|\''rl', 'INSTITUCION', '2');
-insert into usuario (id, email, password, rol, id_institucion) values (73, 'nhinners20@csmonitor.com', 'rT4~Y', 'INSTITUCION', '13');
-insert into usuario (id, email, password, rol, id_institucion) values (74, 'rainsley21@unicef.org', 'gP8<G=', 'INSTITUCION', '7');
-insert into usuario (id, email, password, rol, id_institucion) values (75, 'mclemenceau22@list-manage.com', 'tK1!', 'INSTITUCION', '17');
-insert into usuario (id, email, password, rol, id_institucion) values (76, 'thaugen23@51.la', 'gD9?SB', 'INSTITUCION', '19');
+insert into usuario (id, email, password, rol, id_institucion) values (70, 'eteers1x@go.com', 'dK5#}z', 'COORDINADOR', '4');
+insert into usuario (id, email, password, rol, id_institucion) values (71, 'alinde1y@cpanel.net', 'bO4_', 'COORDINADOR', '12');
+insert into usuario (id, email, password, rol, id_institucion) values (72, 'sscowcraft1z@economist.com', 'hJ0|\''rl', 'COORDINADOR', '2');
+insert into usuario (id, email, password, rol, id_institucion) values (73, 'nhinners20@csmonitor.com', 'rT4~Y', 'COORDINADOR', '13');
+insert into usuario (id, email, password, rol, id_institucion) values (74, 'rainsley21@unicef.org', 'gP8<G=', 'COORDINADOR', '7');
+insert into usuario (id, email, password, rol, id_institucion) values (75, 'mclemenceau22@list-manage.com', 'tK1!', 'COORDINADOR', '17');
+insert into usuario (id, email, password, rol, id_institucion) values (76, 'thaugen23@51.la', 'gD9?SB', 'COORDINADOR', '19');
 insert into usuario (id, email, password, rol, id_institucion) values (77, 'kfreeburn24@slate.com', 'zA8!wP', 'VOLUNTARIO', '20');
-insert into usuario (id, email, password, rol, id_institucion) values (78, 'jrottery25@vistaprint.com', 'xB8$CD', 'INSTITUCION', '8');
+insert into usuario (id, email, password, rol, id_institucion) values (78, 'jrottery25@vistaprint.com', 'xB8$CD', 'COORDINADOR', '8');
 insert into usuario (id, email, password, rol, id_institucion) values (79, 'ohinckes26@shop-pro.jp', 'kP6{x<', 'VOLUNTARIO', '5');
-insert into usuario (id, email, password, rol, id_institucion) values (80, 'nhaddacks27@1688.com', 'tA1.Wv', 'INSTITUCION', '15');
-insert into usuario (id, email, password, rol, id_institucion) values (81, 'tchippin28@tuttocitta.it', 'sG4#I', 'INSTITUCION', '16');
+insert into usuario (id, email, password, rol, id_institucion) values (80, 'nhaddacks27@1688.com', 'tA1.Wv', 'COORDINADOR', '15');
+insert into usuario (id, email, password, rol, id_institucion) values (81, 'tchippin28@tuttocitta.it', 'sG4#I', 'COORDINADOR', '16');
 insert into usuario (id, email, password, rol, id_institucion) values (82, 'trottgers29@uiuc.edu', 'iY3"R&sy', 'VOLUNTARIO', '11');
-insert into usuario (id, email, password, rol, id_institucion) values (83, 'kciccotto2a@phpbb.com', 'xW1''', 'INSTITUCION', '5');
+insert into usuario (id, email, password, rol, id_institucion) values (83, 'kciccotto2a@phpbb.com', 'xW1''', 'COORDINADOR', '5');
 insert into usuario (id, email, password, rol, id_institucion) values (84, 'rbagenal2b@soundcloud.com', 'oT1!Zc.''', 'VOLUNTARIO', '8');
-insert into usuario (id, email, password, rol, id_institucion) values (85, 'nchatenier2c@csmonitor.com', 'gB2~6,m9', 'INSTITUCION', '14');
+insert into usuario (id, email, password, rol, id_institucion) values (85, 'nchatenier2c@csmonitor.com', 'gB2~6,m9', 'COORDINADOR', '14');
 insert into usuario (id, email, password, rol, id_institucion) values (86, 'emcclarence2d@bluehost.com', 'jY5}AdZ', 'VOLUNTARIO', '3');
-insert into usuario (id, email, password, rol, id_institucion) values (87, 'kzanetti2e@buzzfeed.com', 'jF8@c', 'INSTITUCION', '6');
-insert into usuario (id, email, password, rol, id_institucion) values (88, 'gmountford2f@unesco.org', 'cC7&', 'INSTITUCION', '19');
-insert into usuario (id, email, password, rol, id_institucion) values (89, 'bbartkiewicz2g@gmpg.org', 'wX7{c!b', 'INSTITUCION', '10');
+insert into usuario (id, email, password, rol, id_institucion) values (87, 'kzanetti2e@buzzfeed.com', 'jF8@c', 'COORDINADOR', '6');
+insert into usuario (id, email, password, rol, id_institucion) values (88, 'gmountford2f@unesco.org', 'cC7&', 'COORDINADOR', '19');
+insert into usuario (id, email, password, rol, id_institucion) values (89, 'bbartkiewicz2g@gmpg.org', 'wX7{c!b', 'COORDINADOR', '10');
 insert into usuario (id, email, password, rol, id_institucion) values (90, 'edaal2h@cloudflare.com', 'gH5`F!Z', 'VOLUNTARIO', '9');
-insert into usuario (id, email, password, rol, id_institucion) values (91, 'lpatroni2i@fastcompany.com', 'mN5\', 'INSTITUCION', '1');
+insert into usuario (id, email, password, rol, id_institucion) values (91, 'lpatroni2i@fastcompany.com', 'mN5\', 'COORDINADOR', '1');
 insert into usuario (id, email, password, rol, id_institucion) values (92, 'gbouts2j@scientificamerican.com', 'cC0%ji', 'VOLUNTARIO', '12');
-insert into usuario (id, email, password, rol, id_institucion) values (93, 'mdanihelka2k@vistaprint.com', 'aA7?$my4', 'INSTITUCION', '15');
+insert into usuario (id, email, password, rol, id_institucion) values (93, 'mdanihelka2k@vistaprint.com', 'aA7?$my4', 'COORDINADOR', '15');
 insert into usuario (id, email, password, rol, id_institucion) values (94, 'ukenner2l@behance.net', 'xB7''x$Bz', 'VOLUNTARIO', '4');
 insert into usuario (id, email, password, rol, id_institucion) values (95, 'fporcher2m@telegraph.co.uk', 'pN5?n', 'VOLUNTARIO', '2');
 insert into usuario (id, email, password, rol, id_institucion) values (96, 'ccastane2n@unc.edu', 'nS8.JHp', 'VOLUNTARIO', '20');
 insert into usuario (id, email, password, rol, id_institucion) values (97, 'sastbury2o@arizona.edu', 'iI9,', 'VOLUNTARIO', '18');
-insert into usuario (id, email, password, rol, id_institucion) values (98, 'blongshaw2p@google.it', 'xP1%$', 'INSTITUCION', '13');
-insert into usuario (id, email, password, rol, id_institucion) values (99, 'tohenecan2q@businessinsider.com', 'sC9_O#ru', 'INSTITUCION', '17');
+insert into usuario (id, email, password, rol, id_institucion) values (98, 'blongshaw2p@google.it', 'xP1%$', 'COORDINADOR', '13');
+insert into usuario (id, email, password, rol, id_institucion) values (99, 'tohenecan2q@businessinsider.com', 'sC9_O#ru', 'COORDINADOR', '17');
 insert into usuario (id, email, password, rol, id_institucion) values (100, 'kridd2r@nps.gov', 'vE1|\?I9', 'VOLUNTARIO', '7');
 
 -- voluntario
@@ -236,202 +236,211 @@ insert into voluntario (id_voluntario, nombre, apellido, telefono, direccion, id
 select * from voluntario;
 
 
--- emergencia
-
-INSERT INTO emergencia (id_emergencia, asunto, descripcion, direccion, fecha, activa, id_institucion, latitud, longitud) VALUES (1, 'Indigo', 'Green', 'Esquina', '2023-02-20', true, 20, -18.474438, -70.301670);
-
-INSERT INTO emergencia (id_emergencia, asunto, descripcion, direccion, fecha, activa, id_institucion, latitud, longitud) VALUES 
-(2, 'Teal', 'Maroon', 'Lindavista', '2022-12-02', true, '3', -33.4691, -70.6420),
-(3, 'Puce', 'Fuscia', 'Limatambo', '2023-03-23', false, '6', -33.4489, -70.6630),
-(4, 'Turquoise', 'Blue', 'Nuits-Saint-Georges', '2023-02-24', false, '9', -33.4582, -70.6485),
-(5, 'Yellow', 'Violet', 'Huallanca', '2023-07-15', false, '2', -22.9235, -68.0695),
-(6, 'Yellow', 'Green', 'Magang', '2023-05-29', true, '11', -36.6064, -72.1034),
-(7, 'Aquamarine', 'Goldenrod', 'Gaoqiao', '2023-04-17', true, '7', -33.4569, -70.6483),
-(8, 'Red', 'Mauv', 'Den Haag', '2022-11-10', true, '19', -33.4378, -70.6505),
-(9, 'Orange', 'Yellow', 'Nong Yasai', '2023-02-24', false, '10', -33.4714, -70.6504),
-(10, 'Blue', 'Fuscia', 'Hexing', '2023-06-08', false, '15', -33.4574, -70.6546),
-(11, 'Indigo', 'Aquamarine', 'Rumboci', '2023-06-15', false, '5', -33.4600, -70.6486),
-(12, 'Crimson', 'Blue', 'Si Thep', '2023-09-19', false, '13', -33.4679, -70.6428),
-(13, 'Fuscia', 'Teal', 'Wates', '2023-05-19', true, '12', -33.4562, -70.6481),
-(14, 'Goldenrod', 'Blue', 'Puan', '2023-07-16', false, '4', -33.4567, -70.6487),
-(15, 'Turquoise', 'Blue', 'Poigar', '2023-08-10', true, '17', -33.4651, -70.6418),
-(16, 'Green', 'Goldenrod', 'Kamensk-Ural’skiy', '2023-01-27', true, '8', -33.4693, -70.6482),
-(17, 'Fuscia', 'Maroon', 'Jesenice', '2023-09-27', true, '1', -33.4535, -70.6483),
-(18, 'Violet', 'Maroon', 'Tiegai', '2023-03-06', false, '14', -33.4607, -70.6417),
-(19, 'Yellow', 'Purple', 'Batukuta', '2022-12-04', false, '16', -33.4565, -70.6488),
-(20, 'Turquoise', 'Blue', 'Magisterial', '2022-10-21', false, '18', -33.4633, -70.6455),
-(21, 'Indigo', 'Khaki', 'Gävle', '2023-08-13', true, '13', -33.4594, -70.6449),
-(22, 'Puce', 'Teal', 'Reims', '2023-06-14', true, '1', -33.4629, -70.6437),
-(23, 'Pink', 'Green', 'Huaxijie', '2022-10-24', false, '3', -33.4647, -70.6458),
-(24, 'Fuscia', 'Purple', 'Zaoshi', '2023-03-26', false, '8', -33.4668, -70.6422),
-(25, 'Indigo', 'Khaki', 'Ban Chang', '2023-06-06', true, '9', -33.4675, -70.6443),
-(26, 'Green', 'Teal', 'Armenokhórion', '2023-01-04', false, '5', -33.4699, -70.6475),
-(27, 'Crimson', 'Orange', 'Sila', '2023-05-15', false, '19', -33.4712, -70.6439),
-(28, 'Green', 'Indigo', 'Skuodas', '2023-10-04', false, '2', -33.4603, -70.6431),
-(29, 'Green', 'Red', 'Dushanbe', '2023-06-29', false, '16', -33.4680, -70.6494),
-(30, 'Maroon', 'Puce', 'Bilbays', '2023-05-28', false, '6', -33.467, -70.1231),
-
-(31, 'Khaki', 'Violet', 'Tirmiz', '2023-02-23', false, '4', -34.1682, -70.7449),
-(32, 'Khaki', 'Pink', 'Clarin', '2023-05-04', true, '11', -33.9238, -70.5001),
-(33, 'Mauv', 'Purple', 'Baracatan', '2023-03-10', true, '20', -33.4400, -70.6344),
-(34, 'Violet', 'Blue', 'Sara Kunda', '2023-04-07', false, '12', -34.4250, -70.8632),
-(35, 'Turquoise', 'Aquamarine', 'Rio de Moinhos', '2023-02-24', true, '14', -33.4750, -70.6412),
-(36, 'Teal', 'Puce', 'Nuevo Chamelecón', '2023-04-08', true, '15', -33.3471, -70.4986),
-(37, 'Maroon', 'Fuscia', 'Purral', '2023-06-07', false, '10', -9.9583, -84.0492),
-(38, 'Violet', 'Pink', 'Stavanger', '2023-03-02', true, '18', 58.9701, 5.7331),
-(39, 'Teal', 'Puce', 'Banocboc', '2023-02-11', false, '7', 14.6052, 120.9903),
-(40, 'Khaki', 'Yellow', 'Hudong', '2023-08-03', false, '17', 30.2049, 120.2052),
-(41, 'Indigo', 'Puce', 'Donostia-San Sebastian', '2023-01-10', false, '3', 43.3220, -1.9852),
-(42, 'Purple', 'Goldenrod', 'Sinisian', '2022-11-16', true, '16', 10.3157, 123.8854),
-(43, 'Puce', 'Blue', 'Trajouce', '2023-03-12', true, '14', 38.7732, -9.4053),
-(44, 'Maroon', 'Blue', 'Los Angeles', '2023-10-08', true, '6', 34.0522, -118.2437),
-(45, 'Maroon', 'Indigo', 'Zarya', '2023-04-08', true, '1', 54.7361, 20.4894),
-(46, 'Indigo', 'Green', 'Andaray', '2022-11-28', false, '15', -15.8206, -72.6216),
-(47, 'Yellow', 'Pink', 'Quba', '2023-07-07', true, '7', 41.3613, 48.5064),
-(48, 'Mauv', 'Goldenrod', 'Galūgāh', '2023-10-19', false, '9', 36.6977, 52.5989),
-(49, 'Pink', 'Aquamarine', 'Norak', '2022-12-18', true, '20', 39.5546, 69.2910),
-(50, 'Pink', 'Khaki', 'Longfeng', '2023-07-05', true, '4', 23.1162, 114.4129),
-(51, 'Turquoise', 'Blue', 'Agat Village', '2022-10-21', false, '17', 13.4667, 144.7333),
-(52, 'Yellow', 'Indigo', 'Tayug', '2022-12-31', false, '8', 15.9224, 120.5495),
-(53, 'Orange', 'Purple', 'Karagach', '2022-11-08', false, '10', 42.7255, 41.4554),
-(54, 'Puce', 'Maroon', 'Manukau City', '2023-08-24', true, '5', -36.9927, 174.8807),
-(55, 'Aquamarine', 'Aquamarine', 'Duas Igrejas', '2022-10-21', true, '2', 41.4445, -8.6859),
-(56, 'Pink', 'Aquamarine', 'Danao', '2022-12-31', true, '12', 10.5208, 123.4029),
-(57, 'Yellow', 'Indigo', 'Lingcheng', '2023-01-26', false, '19', 23.1496, 113.3285),
-(58, 'Fuscia', 'Mauv', 'Krajan Kerjo', '2023-04-09', true, '18', -7.6256, 112.4426),
-(59, 'Violet', 'Indigo', 'Rifu', '2023-09-23', false, '11', 38.3317, 140.9992),
-(60, 'Mauv', 'Teal', 'Tonjongsari', '2023-03-16', true, '13', -7.4533, 111.1833),
-(61, 'Teal', 'Purple', 'Kuytun', '2023-02-14', true, '3', 44.7069, 85.1978),
-(62, 'Purple', 'Aquamarine', 'Chicago', '2023-09-01', false, '5', 41.8781, -87.6298),
-(63, 'Yellow', 'Goldenrod', 'Quintã', '2023-06-17', true, '15', -22.2546, -44.0068),
-(64, 'Red', 'Maroon', 'El Rosario', '2023-08-13', true, '17', -33.0828, -71.5011),
-(65, 'Green', 'Purple', 'Dingtao', '2022-12-01', false, '9', 35.0704, 115.0073),
-(66, 'Red', 'Goldenrod', 'Huddinge', '2023-09-17', true, '12', 59.2369, 17.9460),
-(67, 'Khaki', 'Mauv', 'San Antonio', '2022-12-09', true, '19', 29.4241, -98.4936),
-(68, 'Mauv', 'Blue', 'Zhuangke', '2023-04-06', false, '11', 32.4436, 111.7463),
-(69, 'Mauv', 'Violet', 'Stockton', '2023-07-18', true, '18', 37.9577, -121.2908),
-(70, 'Khaki', 'Teal', 'Peremyshl’', '2023-09-10', false, '14', 50.0419, 23.4999),
-(71, 'Puce', 'Blue', 'Shadrinsk', '2023-08-31', true, '8', 56.0905, 63.6340),
-(72, 'Puce', 'Indigo', 'Longcang', '2023-07-17', false, '7', 31.7644, 119.9715),
-(73, 'Blue', 'Puce', 'Beidong', '2023-04-20', false, '1', 31.2304, 121.4737),
-(74, 'Yellow', 'Khaki', 'Liuhe', '2023-02-13', false, '16', 28.2154, 120.6070),
-(75, 'Aquamarine', 'Puce', 'Kuantan', '2023-09-01', false, '10', 3.8077, 103.3260),
-(76, 'Indigo', 'Puce', 'General Luna', '2022-10-25', true, '20', 9.7192, 125.5722),
-(77, 'Mauv', 'Yellow', 'Vanves', '2023-10-17', true, '6', 48.8226, 2.3174),
-(78, 'Aquamarine', 'Maroon', 'Wangbuzhuang', '2023-02-20', false, '13', 38.6605, 115.4405),
-(79, 'Purple', 'Turquoise', 'Shiqiao', '2022-11-05', true, '2', 23.1291, 113.2684),
-(80, 'Turquoise', 'Orange', 'Lae', '2023-09-29', true, '4', -6.7238, 146.9900),
-(81, 'Fuscia', 'Goldenrod', 'Port-Gentil', '2023-02-15', true, '17', -0.7194, 8.7815),
-(82, 'Yellow', 'Khaki', 'Yumbe', '2023-02-03', false, '9', 3.4659, 31.2462),
-(83, 'Teal', 'Indigo', 'Hengliang', '2023-08-25', false, '4', 30.4181, 114.1107),
-(84, 'Turquoise', 'Blue', 'Naru', '2023-09-25', false, '5', -0.5228, 166.9346),
-(85, 'Violet', 'Fuscia', 'An Nāşirah', '2023-07-11', true, '15', 32.1093, 36.0997),
-(86, 'Goldenrod', 'Aquamarine', 'Riosucio', '2023-09-02', false, '6', 5.5254, -76.6852),
-(87, 'Fuscia', 'Maroon', 'Eystur', '2023-04-27', true, '8', 62.0106, -6.7739),
-(88, 'Violet', 'Goldenrod', 'Kotor', '2023-02-28', true, '13', 42.4247, 18.7712),
-(89, 'Red', 'Crimson', 'Goim', '2023-05-20', true, '16', 9.1766, 16.2931),
-(90, 'Green', 'Pink', 'Quảng Yên', '2023-01-24', true, '7', 20.9491, 106.8142),
-(91, 'Blue', 'Blue', 'Eaton', '2023-05-03', true, '20', 53.3050, -113.5843),
-(92, 'Aquamarine', 'Mauv', 'Atamyrat', '2023-06-16', true, '14', 37.8363, 65.2124),
-(93, 'Teal', 'Blue', 'Yushu', '2022-12-16', true, '11', 33.0055, 97.0061),
-(94, 'Orange', 'Aquamarine', 'Lipin Bor', '2023-02-22', true, '18', 58.0454, 56.3190),
-(95, 'Turquoise', 'Mauv', 'Tongzha', '2023-06-23', false, '2', 30.6551, 116.1222),
-(96, 'Teal', 'Pink', 'Meru', '2023-09-23', true, '19', -0.0991, 37.6313),
-(97, 'Teal', 'Purple', 'Xin’andu', '2023-05-31', false, '10', 30.2489, 113.0769),
-(98, 'Teal', 'Crimson', 'Luleå', '2023-08-13', false, '3', 65.5848, 22.1567),
-(99, 'Teal', 'Purple', 'Bayawan', '2023-04-30', true, '12', 9.3789, 122.8044),
-(100, 'Khaki', 'Turquoise', 'Solna', '2023-05-28', false, '1', 59.3603, 18.0001);
+INSERT INTO emergencia (id_emergencia, asunto, descripcion, direccion, fecha, activa, id_institucion, latitud, longitud) VALUES
+                                                                                                                             (1, 'Incendio forestal', 'Gran incendio en la región de Valparaíso', 'Cerro Alegre, Valparaíso', '2023-02-20', true, 20, -33.0472, -71.6127),
+                                                                                                                             (2, 'Inundación', 'Desbordamiento del río Mapocho', 'Providencia, Santiago', '2022-12-02', true, 3, -33.4397, -70.6333),
+                                                                                                                             (3, 'Terremoto', 'Sismo de magnitud 6.5 en Concepción', 'Concepción', '2023-03-23', false, 6, -36.8201, -73.0440),
+                                                                                                                             (4, 'Deslizamiento de tierra', 'Deslave en los Andes', 'Cajón del Maipo', '2023-02-24', false, 9, -33.7512, -70.1206),
+                                                                                                                             (5, 'Emergencia médica', 'Accidente vehicular en Antofagasta', 'Avenida Angamos, Antofagasta', '2023-07-15', false, 2, -23.6509, -70.4001),
+                                                                                                                             (6, 'Incidente químico', 'Fuga de sustancias peligrosas en Talca', 'Parque Industrial, Talca', '2023-05-29', true, 11, -35.4261, -71.6485),
+                                                                                                                             (7, 'Incendio en fábrica', 'Fuego en una fábrica en Santiago', 'Quinta Normal, Santiago', '2023-04-17', true, 7, -33.4316, -70.6940),
+                                                                                                                             (8, 'Accidente de tráfico', 'Colisión múltiple en Den Haag', 'Ruta 5 Norte, La Serena', '2022-11-10', true, 19, -29.9054, -71.2465),
+                                                                                                                             (9, 'Inundación', 'Desbordamiento del río Maule', 'San Clemente, Maule', '2023-02-24', false, 10, -35.5904, -71.3981),
+                                                                                                                             (10, 'Deslizamiento de tierra', 'Derrumbe en Los Andes', 'Ruta G-25, San Esteban', '2023-06-08', false, 15, -32.8220, -70.5956),
+                                                                                                                             (11, 'Incendio en hogar', 'Fuego en vivienda en Temuco', 'Población Santa Rosa, Temuco', '2023-06-15', false, 5, -38.7383, -72.5984),
+                                                                                                                             (12, 'Accidente de tráfico', 'Colisión en Ruta 68', 'Km 123, Casablanca', '2023-09-19', false, 13, -33.3981, -71.4025),
+                                                                                                                             (13, 'Emergencia médica', 'Paro cardíaco en La Serena', 'Avenida del Mar, La Serena', '2023-05-19', true, 12, -29.9066, -71.2529),
+                                                                                                                             (14, 'Incidente químico', 'Fuga de gas en Santiago', 'Providencia, Santiago', '2023-07-16', false, 4, -33.4360, -70.6262),
+                                                                                                                             (15, 'Deslizamiento de tierra', 'Desprendimiento de rocas en San Antonio', 'Playa El Canelo, San Antonio', '2023-08-10', true, 17, -33.5977, -71.6206),
+                                                                                                                             (16, 'Emergencia médica', 'Accidente de bicicleta en Viña del Mar', 'Costa Brava, Viña del Mar', '2023-01-27', true, 8, -33.0148, -71.5554),
+                                                                                                                             (17, 'Incendio forestal', 'Fuego en el Parque Nacional Torres del Paine', 'Puerto Natales', '2023-09-27', true, 1, -51.2602, -72.3459),
+                                                                                                                             (18, 'Inundación', 'CreCida del río Biobío', 'Concepción', '2023-03-06', false, 14, -36.8219, -73.0432),
+                                                                                                                             (19, 'Emergencia médica', 'Accidente de moto en Antofagasta', 'Av. Pedro Aguirre Cerda, Antofagasta', '2022-12-04', false, 16, -23.6463, -70.3995),
+                                                                                                                             (20, 'Deslizamiento de tierra', 'Derrumbe en Valdivia', 'Cerro Chapelco, Valdivia', '2022-10-21', false, 18, -39.8438, -73.2452),
+                                                                                                                             (21, 'Incendio en hogar', 'Fuego en vivienda en Santiago', 'La Florida, Santiago', '2023-08-13', true, 13, -33.5437, -70.5628),
+                                                                                                                             (22, 'Inundación', 'Inundaciones en Valparaíso', 'Cerro Caracol, Valparaíso', '2023-06-14', true, 1, -33.0393, -71.6269),
+                                                                                                                             (23, 'Emergencia médica', 'Accidente de tráfico en Huaxijie', 'Av. Bernardo O’Higgins, Santiago', '2022-10-24', false, 3, -33.4443, -70.6478),
+                                                                                                                             (24, 'Incidente químico', 'Fuga de productos químicos en Zaoshi', 'Parque Industrial, Santiago', '2023-03-26', false, 8, -33.5116, -70.6175),
+                                                                                                                             (25, 'Accidente de tráfico', 'Colisión en Ban Chang', 'Ruta 5 Sur, Curicó', '2023-06-06', true, 9, -34.9848, -71.2465),
+                                                                                                                             (26, 'Deslizamiento de tierra', 'Desprendimiento de tierra en Armenokhórion', 'Ruta G-80, Valparaíso', '2023-01-04', false, 5, -33.0889, -71.5076),
+                                                                                                                             (27, 'Incendio forestal', 'Gran incendio en Sila', 'Nevados de Chillán', '2023-05-15', false, 19, -36.8422, -71.3787),
+                                                                                                                             (28, 'Emergencia médica', 'Accidente de tráfico en Skuodas', 'Ruta 68, Quilicura', '2023-10-04', false, 2, -33.3600, -70.7298),
+                                                                                                                             (29, 'Incidente químico', 'Fuga de sustancias peligrosas en Dushanbe', 'Parque Industrial, Santiago', '2023-06-29', false, 16, -33.4254, -70.6125),
+                                                                                                                             (30, 'Inundación', 'Desbordamiento del río Mapocho', 'Providencia, Santiago', '2023-05-28', false, 6, -33.4405, -70.6352),
+                                                                                                                             (31, 'Deslizamiento de tierra', 'Derrumbe en Tirmiz', 'Cerro Tres Puntas, San Esteban', '2023-02-23', false, 4, -32.8020, -70.0578),
+                                                                                                                             (32, 'Incendio forestal', 'Fuego en la Reserva Nacional Ralco', 'Alto Bío Bío', '2023-05-04', true, 11, -37.6622, -71.5924),
+                                                                                                                             (33, 'Inundación', 'Desbordamiento del río Laja', 'Laja, Bío Bío', '2023-03-10', true, 20, -37.2787, -72.7138),
+                                                                                                                             (34, 'Emergencia médica', 'Accidente de tráfico en Baracatan', 'Ruta 5 Sur, San Javier', '2023-04-07', false, 12, -35.5887, -71.5949),
+                                                                                                                             (35, 'Deslizamiento de tierra', 'Derrumbe en Sara Kunda', 'Cerro Santa Lucía, Santiago', '2023-02-24', true, 14, -33.4386, -70.6432),
+                                                                                                                             (36, 'Incidente químico', 'Fuga de productos químicos en Rio de Moinhos', 'Parque Industrial, Santiago', '2023-04-08', true, 15, -33.4173, -70.5740),
+                                                                                                                             (37, 'Incendio en fábrica', 'Fuego en una fábrica en Nuevo Chamelecón', 'Lo Espejo, Santiago', '2023-06-07', false, 10, -33.5158, -70.6827),
+                                                                                                                             (38, 'Emergencia médica', 'Accidente de tráfico en Purral', 'Ruta 4, San José', '2023-03-02', true, 18, 9.9637, -84.0192),
+                                                                                                                             (39, 'Incendio en hogar', 'Fuego en vivienda en Stavanger', 'Providencia, Santiago', '2023-02-11', false, 7, -33.4438, -70.6229),
+                                                                                                                             (40, 'Deslizamiento de tierra', 'Deslave en Banocboc', 'Cajón del Maipo', '2023-08-03', false, 17, -33.7072, -70.3775),
+                                                                                                                             (41, 'Incidente químico', 'Fuga de sustancias peligrosas en Hudong', 'Parque Industrial, Concepción', '2023-01-10', false, 3, -36.8279, -73.0455),
+                                                                                                                             (42, 'Inundación', 'Desbordamiento del río Maipo', 'Buin, Santiago', '2022-11-16', true, 16, -33.7330, -70.7355),
+                                                                                                                             (43, 'Deslizamiento de tierra', 'Derrumbe en Trajouce', 'Cerro San Cristóbal, Santiago', '2023-03-12', true, 14, -33.4383, -70.6330),
+                                                                                                                             (44, 'Emergencia médica', 'Accidente de tráfico en Los Angeles', 'Ruta 5 Sur, Los Angeles', '2023-10-08', true, 6, -37.4615, -72.3523),
+                                                                                                                             (45, 'Incendio forestal', 'Gran incendio en Zarya', 'Reserva Nacional Magallanes', '2023-04-08', true, 1, -52.6739, -71.5825),
+                                                                                                                             (46, 'Deslizamiento de tierra', 'Derrumbe en Andaray', 'Cerro Provincia, Santiago', '2022-11-28', false, 15, -33.3494, -70.4433),
+                                                                                                                             (47, 'Inundación', 'Inundaciones en Quba', 'Cerro Manquehue, Santiago', '2023-07-07', true, 7, -33.3605, -70.5214),
+                                                                                                                             (48, 'Emergencia médica', 'Accidente de tráfico en Galūgāh', 'Ruta 5 Sur, Curicó', '2023-10-19', false, 9, -35.1005, -71.2734),
+                                                                                                                             (49, 'Incendio en hogar', 'Fuego en vivienda en Norak', 'Providencia, Santiago', '2022-12-18', true, 20, -33.4440, -70.6244),
+                                                                                                                             (50, 'Deslizamiento de tierra', 'Deslave en Longfeng', 'Cajón del Maipo', '2023-07-05', true, 4, -33.6784, -70.3130),
+                                                                                                                             (51, 'Incendio en fábrica', 'Fuego en una fábrica en Cartagena', 'San Antonio, Santiago', '2023-09-02', true, 17, -33.5784, -70.6505),
+                                                                                                                             (52, 'Emergencia médica', 'Accidente de tráfico en Al Khubar', 'Ruta 68, Pudahuel', '2023-08-18', false, 11, -33.4367, -70.7513),
+                                                                                                                             (53, 'Incidente químico', 'Fuga de sustancias peligrosas en Zhangjiagang', 'Parque Industrial, Santiago', '2023-07-25', true, 15, -33.4522, -70.6214),
+                                                                                                                             (54, 'Deslizamiento de tierra', 'Derrumbe en Bač', 'Cerro El Plomo, Santiago', '2023-06-30', true, 8, -33.3636, -70.2742),
+                                                                                                                             (55, 'Incendio en hogar', 'Fuego en vivienda en Santiago', 'Lo Barnechea, Santiago', '2023-01-15', false, 13, -33.3455, -70.5082),
+                                                                                                                             (56, 'Accidente de tráfico', 'Colisión en Mahanje', 'Ruta 5 Norte, Coquimbo', '2023-04-22', false, 19, -29.9389, -71.2717),
+                                                                                                                             (57, 'Inundación', 'Inundaciones en Kruševac', 'Cerro Pochoco, Santiago', '2023-03-15', false, 16, -33.3744, -70.5026),
+                                                                                                                             (58, 'Emergencia médica', 'Accidente de tráfico en Samalaeulu', 'Ruta 5 Norte, La Serena', '2023-09-10', true, 12, -29.9013, -71.2542),
+                                                                                                                             (59, 'Incidente químico', 'Fuga de gas en Antofagasta', 'Antofagasta', '2023-02-12', true, 16, -23.6524, -70.3977),
+                                                                                                                             (60, 'Deslizamiento de tierra', 'Deslave en Kilembe', 'Cajón del Maipo', '2023-04-29', false, 18, -33.6682, -70.2584),
+                                                                                                                             (61, 'Incendio forestal', 'Fuego en el Parque Nacional Lauca', 'Arica', '2023-08-29', true, 1, -18.2901, -69.5297),
+                                                                                                                             (62, 'Inundación', 'Desbordamiento del río Choapa', 'Salamanca, Choapa', '2023-03-05', false, 14, -31.7856, -71.2467),
+                                                                                                                             (63, 'Emergencia médica', 'Accidente de tráfico en Ban Na San', 'Ruta 68, Quilicura', '2023-02-01', true, 2, -33.3601, -70.7299),
+                                                                                                                             (64, 'Incidente químico', 'Fuga de productos químicos en Libiąż', 'Parque Industrial, Concepción', '2023-09-26', false, 3, -36.8281, -73.0441),
+                                                                                                                             (65, 'Deslizamiento de tierra', 'Desprendimiento de tierra en Dhangadhi', 'Ruta 5 Sur, Talca', '2023-04-18', true, 9, -35.4303, -71.6536),
+                                                                                                                             (66, 'Incendio forestal', 'Gran incendio en el Parque Nacional Queulat', 'Aysén', '2023-02-08', true, 20, -44.4080, -72.7586),
+                                                                                                                             (67, 'Inundación', 'CreCida del río Lluta', 'Arica', '2023-03-21', false, 1, -18.4700, -70.3049),
+                                                                                                                             (68, 'Emergencia médica', 'Accidente de moto en Rostov', 'Ruta 68, Pudahuel', '2023-06-17', true, 11, -33.4392, -70.7468),
+                                                                                                                             (69, 'Incidente químico', 'Fuga de sustancias peligrosas en Barrancabermeja', 'Parque Industrial, Concepción', '2023-04-12', false, 15, -36.8297, -73.0445),
+                                                                                                                             (70, 'Deslizamiento de tierra', 'Deslave en Tiwi', 'Cajón del Maipo', '2023-09-07', true, 4, -33.6353, -70.3946),
+                                                                                                                             (71, 'Incendio en hogar', 'Fuego en vivienda en Osorno', 'Rahue, Osorno', '2023-08-21', false, 17, -40.5596, -73.1258),
+                                                                                                                             (72, 'Inundación', 'Inundaciones en Hanzhong', 'Parque Metropolitano, Santiago', '2023-02-28', false, 7, -33.4132, -70.6180),
+                                                                                                                             (73, 'Emergencia médica', 'Accidente de tráfico en El Salvador', 'Ruta 5 Sur, Talca', '2023-03-27', true, 6, -35.4330, -71.6533),
+                                                                                                                             (74, 'Incidente químico', 'Fuga de productos químicos en Yerevan', 'Parque Industrial, Santiago', '2023-01-20', false, 8, -33.5075, -70.6551),
+                                                                                                                             (75, 'Deslizamiento de tierra', 'Derrumbe en Banlung', 'Cerro Manquehue, Santiago', '2023-07-30', true, 14, -33.3632, -70.5155),
+                                                                                                                             (76, 'Incendio forestal', 'Fuego en el Parque Nacional Puyehue', 'Osorno', '2023-06-24', false, 18, -40.5692, -72.4256),
+                                                                                                                             (77, 'Inundación', 'Desbordamiento del río Loa', 'Calama, Antofagasta', '2023-09-15', false, 10, -22.4528, -68.9296),
+                                                                                                                             (78, 'Emergencia médica', 'Accidente de tráfico en Iquique', 'Ruta 1, Iquique', '2023-04-30', true, 13, -20.2420, -70.1357),
+                                                                                                                             (79, 'Incidente químico', 'Fuga de sustancias peligrosas en Changxing', 'Parque Industrial, Concepción', '2023-08-05', true, 19, -36.7764, -73.0777),
+                                                                                                                             (80, 'Deslizamiento de tierra', 'Deslave en Bački Petrovac', 'Cajón del Maipo', '2023-02-15', false, 15, -33.6494, -70.3831),
+                                                                                                                             (81, 'Incendio en hogar', 'Fuego en vivienda en Nuuk', 'Lo Barnechea, Santiago', '2023-01-08', true, 16, -33.3456, -70.5084),
+                                                                                                                             (82, 'Deslizamiento de tierra', 'Desprendimiento de tierra en Mandera', 'Cerro El Plomo, Santiago', '2023-09-22', false, 3, -33.3558, -70.2502),
+                                                                                                                             (83, 'Incendio forestal', 'Gran incendio en Torres del Paine', 'Magallanes', '2023-07-17', false, 1, -50.9423, -73.4068),
+                                                                                                                             (84, 'Inundación', 'Desbordamiento del río Aisén', 'Coyhaique, Aysén', '2023-05-09', true, 20, -45.5758, -72.0662),
+                                                                                                                             (85, 'Emergencia médica', 'Accidente de tráfico en Renca', 'Ruta 68, Renca', '2023-04-04', true, 5, -33.4071, -70.7534),
+                                                                                                                             (86, 'Incidente químico', 'Fuga de gas en San Pedro de Atacama', 'San Pedro de Atacama, Antofagasta', '2023-11-01', false, 7, -22.9083, -68.1985),
+                                                                                                                             (87, 'Deslizamiento de tierra', 'Deslave en Sông Cầu', 'Cajón del Maipo', '2023-08-11', false, 12, -33.6639, -70.2769),
+                                                                                                                             (88, 'Incendio en hogar', 'Fuego en vivienda en Yerevan', 'Lo Barnechea, Santiago', '2023-10-12', true, 8, -33.3534, -70.5027),
+                                                                                                                             (89, 'Deslizamiento de tierra', 'Desprendimiento de tierra en Mitrovice', 'Cerro Provincia, Santiago', '2023-03-18', false, 10, -33.3586, -70.4324),
+                                                                                                                             (90, 'Incendio forestal', 'Gran incendio en el Parque Nacional Hornopirén', 'Hornopirén, Los Lagos', '2023-05-24', true, 14, -41.9912, -72.5496),
+                                                                                                                             (91, 'Inundación', 'Desbordamiento del río Iguazú', 'Puerto Iguazú', '2023-02-05', false, 17, -25.5972, -54.5786),
+                                                                                                                             (92, 'Emergencia médica', 'Accidente de tráfico en Baku', 'Ruta 5 Norte, Coquimbo', '2023-10-01', true, 19, -29.9595, -71.2722),
+                                                                                                                             (93, 'Incidente químico', 'Fuga de productos químicos en Oulu', 'Parque Industrial, Concepción', '2023-07-10', false, 15, -36.8173, -73.0461),
+                                                                                                                             (94, 'Deslizamiento de tierra', 'Deslave en Ngara', 'Cajón del Maipo', '2023-09-25', true, 4, -33.5612, -70.2659),
+                                                                                                                             (95, 'Incendio forestal', 'Gran incendio en el Parque Nacional Nahuelbuta', 'Araucanía', '2023-04-15', true, 18, -37.5203, -73.1869),
+                                                                                                                             (96, 'Inundación', 'Desbordamiento del río Petrohué', 'Puerto Varas, Los Lagos', '2023-02-20', false, 9, -41.2236, -72.5097),
+                                                                                                                             (97, 'Emergencia médica', 'Accidente de tráfico en Guwahati', 'Ruta 68, Colina', '2023-07-05', false, 11, -33.3168, -70.6473),
+                                                                                                                             (98, 'Incidente químico', 'Fuga de sustancias peligrosas en Molodechno', 'Parque Industrial, Santiago', '2023-10-29', true, 15, -33.4604, -70.6350),
+                                                                                                                             (99, 'Deslizamiento de tierra', 'Desprendimiento de tierra en Łódź', 'Cerro El Plomo, Santiago', '2023-08-16', true, 8, -33.3634, -70.2540),
+                                                                                                                             (100, 'Incendio en hogar', 'Fuego en vivienda en Kaesong', 'Rancagua', '2023-03-01', false, 16, -34.1659, -70.7499);
 -- tarea
 
-insert into tarea (id_tarea, asunto_tarea, estado_tarea, id_emergencia, latitud, longitud) values (1, 'urgente', true, '100', -33.439488, -70.665739);
 INSERT INTO tarea (id_tarea, asunto_tarea, estado_tarea, id_emergencia, latitud, longitud) VALUES
-(1, 'urgente', true, '1', -18.2, -70.3),
-(2, 'importante', true, '2', -18.6, -69.9),
-(3, 'normal', false, '3', -18.4, -70.1),
-(4, 'urgente', true, '4', -18.7, -69.5),
-(5, 'normal', false, '5', -18.5, -70.2);
-(6, 'importante', false, '49', -19.0, -69.0),
-(7, 'importante', true, '72', -20.0, -70.0),
-(8, 'urgente', false, '77', -19.5, -69.5),
-(9, 'incendio', false, '40', -20.0, -70.5),
-(10, 'incendio', true, '82', -19.2, -69.8),
-(11, 'incendio', false, '37', -21.0, -69.5),
-(12, 'incendio', false, '50', -21.5, -69.0),
-(13, 'urgente', true, '91', -22.5, -68.5),
-(14, 'importante', false, '90', -23.0, -69.5),
-(15, 'incendio', true, '42', -24.0, -69.0),
-(16, 'urgente', true, '43', -25.0, -68.0),
-(17, 'urgente', false, '76', -25.5, -69.5),
-(18, 'urgente', false, '83', -26.0, -68.0),
-(19, 'importante', true, '54', -26.5, -68.5),
-(20, 'urgente', true, '87', -27.0, -69.0),
-(21, 'urgente', true, '39', -27.0, -69.0),
-(22, 'incendio', true, '69', -28.0, -69.5),
-(23, 'importante', true, '25', -29.0, -70.0),
-(24, 'urgente', false, '89', -27.5, -69.0),
-(25, 'importante', false, '45', -27.0, -68.5),
-(26, 'incendio', true, '95', -29.5, -71.0),
-(27, 'incendio', false, '29', -29.0, -71.5),
-(28, 'incendio', false, '22', -29.3, -72.0),
-(29, 'urgente', false, '94', -29.7, -71.3),
-(30, 'importante', true, '30', -29.0, -71.0),
-(31, 'importante', false, '75', -32.0, -71.5),
-(32, 'urgente', true, '65', -32.1, -71.9),
-(33, 'urgente', false, '73', -32.3, -71.7),
-(34, 'urgente', false, '68', -32.5, -71.6),
-(35, 'incendio', false, '78', -33.0, -71.3),
-(36, 'incendio', false, '35', -33.0, -71.2),
-(37, 'incendio', false, '8', -33.1, -71.3),
-(38, 'importante', true, '20', -33.2, -71.4),
-(39, 'urgente', true, '92', -33.3, -71.5),
-(40, 'incendio', false, '67', -33.4, -71.6),
-(41, 'importante', false, '26', -34.5, -71.2),
-(42, 'incendio', true, '47', -34.7, -71.4),
-(43, 'incendio', false, '16', -34.8, -71.5),
-(44, 'incendio', false, '13', -35.0, -71.6),
-(45, 'incendio', false, '41', -35.2, -71.8),
-(46, 'urgente', false, '3', -34.9, -71.5),
-(47, 'incendio', true, '6', -35.5, -71.9),
-(48, 'incendio', false, '58', -36.2, -72.3),
-(49, 'importante', true, '96', -35.8, -72.6),
-(50, 'importante', false, '81', -36.4, -72.0),
+                                                                                               (1, 'Evacuación de zona afectada', true, '1', -18.2, -70.3),
+                                                                                               (2, 'Atención médica urgente', true, '2', -18.6, -69.9),
+                                                                                               (3, 'Inspección de daños estructurales', false, '3', -18.4, -70.1),
+                                                                                               (4, 'Despliegue de equipos de rescate', true, '4', -18.7, -69.5),
+                                                                                               (5, 'Evaluación de daños y necesidades', false, '5', -18.5, -70.2),
+                                                                                               (6, 'Coordinación de recursos de emergencia', false, '49', -19.0, -69.0),
+                                                                                               (7, 'Apoyo logístico a damnificados', true, '72', -20.0, -70.0),
+                                                                                               (8, 'Comunicación de riesgos a la comunidad', false, '77', -19.5, -69.5),
+                                                                                               (9, 'Control de incendio forestal', false, '40', -20.0, -70.5),
+                                                                                               (10, 'Desalojo preventivo por incendio', true, '82', -19.2, -69.8),
+                                                                                               (11, 'Monitoreo de áreas propensas a incendios', false, '37', -21.0, -69.5),
+                                                                                               (12, 'Coordinación de recursos para incendio', false, '50', -21.5, -69.0),
+                                                                                               (13, 'Evacuación de zona afectada por sismo', true, '91', -22.5, -68.5),
+                                                                                               (14, 'Apoyo psicológico a afectados', false, '90', -23.0, -69.5),
+                                                                                               (15, 'Control de incendio en estructuras', true, '42', -24.0, -69.0),
+                                                                                               (16, 'Atención médica en zona remota', true, '43', -25.0, -68.0),
+                                                                                               (17, 'Coordinación de refugios temporales', false, '76', -25.5, -69.5),
+                                                                                               (18, 'Monitoreo de riesgo de inundación', false, '83', -26.0, -68.0),
+                                                                                               (19, 'Despliegue de asistencia humanitaria', true, '54', -26.5, -68.5),
+                                                                                               (20, 'Desalojo preventivo por crecida de río', true, '87', -27.0, -69.0),
+                                                                                               (21, 'Evaluación de daños por deslizamiento', true, '39', -27.0, -69.0),
+                                                                                               (22, 'Control de incendio en zona rural', true, '69', -28.0, -69.5),
+                                                                                               (23, 'Coordinación de recursos para emergencia', true, '25', -29.0, -70.0),
+                                                                                               (24, 'Apoyo logístico a afectados por deslizamiento', false, '89', -27.5, -69.0),
+                                                                                               (25, 'Apoyo psicosocial a damnificados', false, '45', -27.0, -68.5),
+                                                                                               (26, 'Control de incendio en área montañosa', true, '95', -29.5, -71.0),
+                                                                                               (27, 'Monitoreo de riesgo de deslave', false, '29', -29.0, -71.5),
+                                                                                               (28, 'Control de incendio en zona industrial', false, '22', -29.3, -72.0),
+                                                                                               (29, 'Evacuación preventiva por riesgo químico', false, '94', -29.7, -71.3),
+                                                                                               (30, 'Coordinación de recursos médicos', true, '30', -29.0, -71.0),
+                                                                                               (31, 'Apoyo logístico en áreas inundadas', false, '75', -32.0, -71.5),
+                                                                                               (32, 'Evacuación por riesgo de deslizamiento', true, '65', -32.1, -71.9),
+                                                                                               (33, 'Coordinación de recursos para evacuación', false, '73', -32.3, -71.7),
+                                                                                               (34, 'Monitoreo de riesgo de desprendimiento', false, '68', -32.5, -71.6),
+                                                                                               (35, 'Control de incendio en interfaz urbano-forestal', false, '78', -33.0, -71.3),
+                                                                                               (36, 'Control de incendio en área residencial', false, '35', -33.0, -71.2),
+                                                                                               (37, 'Control de incendio en vivienda', false, '8', -33.1, -71.3),
+                                                                                               (38, 'Apoyo logístico a refugios temporales', true, '20', -33.2, -71.4),
+                                                                                               (39, 'Evacuación de zona afectada por sismo', true, '92', -33.3, -71.5),
+                                                                                               (40, 'Monitoreo de áreas propensas a incendios forestales', false, '67', -33.4, -71.6),
+                                                                                               (41, 'Apoyo psicosocial a afectados por inundación', false, '26', -34.5, -71.2),
+                                                                                               (42, 'Control de incendio en área rural', true, '47', -34.7, -71.4),
+                                                                                               (43, 'Monitoreo de riesgo de deslizamiento de tierra', false, '16', -34.8, -71.5),
+                                                                                               (44, 'Monitoreo de riesgo químico en industrias', false, '13', -35.0, -71.6),
+                                                                                               (45, 'Coordinación de recursos para control de incendio', false, '41', -35.2, -71.8),
+                                                                                               (46, 'Evaluación de daños por deslizamiento', false, '3', -34.9, -71.5),
+                                                                                               (47, 'Control de incendio en vivienda urbana', true, '6', -35.5, -71.9),
+                                                                                               (48, 'Control de incendio en área industrial', false, '58', -36.2, -72.3),
+                                                                                               (49, 'Desalojo preventivo por riesgo de deslizamiento', true, '96', -35.8, -72.6),
+                                                                                               (50, 'Apoyo logístico a damnificados por deslizamiento', false, '81', -36.4, -72.0),
 
-(51, 'incendio', false, '66', -36.2, -72.5),
-(52, 'urgente', true, '11', -36.6, -72.9),
-(53, 'urgente', false, '86', -36.8, -72.3),
-(54, 'incendio', false, '33', -37.0, -72.7),
-(55, 'urgente', false, '55', -36.4, -72.6),
-(56, 'urgente', false, '19', -36.7, -72.5),
-(57, 'urgente', true, '4', -37.2, -72.9),
-(58, 'urgente', false, '31', -36.9, -72.2),
-(59, 'importante', true, '57', -37.8, -72.8),
-(60, 'urgente', false, '88', -37.5, -72.6),
-(61, 'incendio', true, '32', -38.1, -72.8),
-(62, 'incendio', false, '48', -38.6, -73.2),
-(63, 'urgente', false, '61', -38.4, -73.9),
-(64, 'incendio', true, '18', -38.8, -71.9),
-(65, 'urgente', true, '93', -38.2, -72.5),
-(66, 'urgente', true, '84', -39.0, -72.5),
-(67, 'incendio', false, '38', -39.2, -72.9),
-(68, 'incendio', true, '36', -40.3, -72.1),
-(69, 'urgente', false, '79', -40.7, -73.0),
-(70, 'urgente', true, '34', -40.0, -72.7),
-(71, 'urgente', false, '74', -41.5, -72.8),
-(72, 'urgente', false, '5', -42.5, -73.2),
-(73, 'urgente', false, '2', -43.5, -73.5),
-(74, 'urgente', false, '97', -43.0, -74.0),
-(75, 'incendio', true, '52', -42.8, -74.5),
-(76, 'incendio', true, '98', -45.5, -72.5),
-(77, 'urgente', false, '28', -44.5, -73.5),
-(78, 'urgente', true, '71', -45.0, -74.0),
-(79, 'urgente', true, '9', -46.0, -74.5),
-(80, 'incendio', false, '27', -46.5, -75.0),
-(81, 'incendio', true, '44', -52.0, -70.0),
-(82, 'importante', false, '70', -51.5, -70.5),
-(83, 'incendio', false, '23', -51.0, -71.0),
-(84, 'urgente', false, '1', -50.5, -71.5),
-(85, 'incendio', true, '24', -50.0, -72.0);
-
+                                                                                               (51, 'Control de incendio en área boscosa', false, '66', -36.2, -72.5),
+                                                                                               (52, 'Despliegue de equipos médicos de emergencia', true, '11', -36.6, -72.9),
+                                                                                               (53, 'Monitoreo de riesgo volcánico', false, '86', -36.8, -72.3),
+                                                                                               (54, 'Evaluación de daños por deslizamiento', false, '33', -37.0, -72.7),
+                                                                                               (55, 'Evacuación preventiva por inundación', false, '55', -36.4, -72.6),
+                                                                                               (56, 'Despliegue de equipos de rescate', false, '19', -36.7, -72.5),
+                                                                                               (57, 'Evacuación de zona afectada por sismo', true, '4', -37.2, -72.9),
+                                                                                               (58, 'Monitoreo de riesgo de deslave', false, '31', -36.9, -72.2),
+                                                                                               (59, 'Apoyo logístico a refugios temporales', true, '57', -37.8, -72.8),
+                                                                                               (60, 'Despliegue de recursos para emergencia', false, '88', -37.5, -72.6),
+                                                                                               (61, 'Control de incendio en área forestal', true, '32', -38.1, -72.8),
+                                                                                               (62, 'Monitoreo de riesgo sísmico', false, '48', -38.6, -73.2),
+                                                                                               (63, 'Despliegue de equipos de emergencia médica', false, '61', -38.4, -73.9),
+                                                                                               (64, 'Control de incendio en estructuras', true, '18', -38.8, -71.9),
+                                                                                               (65, 'Evacuación preventiva por riesgo volcánico', true, '93', -38.2, -72.5),
+                                                                                               (66, 'Evacuación de zona afectada por inundación', true, '84', -39.0, -72.5),
+                                                                                               (67, 'Monitoreo de riesgo de incendios forestales', false, '38', -39.2, -72.9),
+                                                                                               (68, 'Control de incendio en área rural', true, '36', -40.3, -72.1),
+                                                                                               (69, 'Evacuación preventiva por riesgo de deslizamiento', false, '79', -40.7, -73.0),
+                                                                                               (70, 'Despliegue de equipos de emergencia', true, '34', -40.0, -72.7),
+                                                                                               (71, 'Coordinación de recursos para emergencia médica', false, '74', -41.5, -72.8),
+                                                                                               (72, 'Evacuación preventiva por riesgo de inundación', false, '5', -42.5, -73.2),
+                                                                                               (73, 'Evacuación preventiva por sismo', false, '2', -43.5, -73.5),
+                                                                                               (74, 'Coordinación de recursos para evacuación', false, '97', -43.0, -74.0),
+                                                                                               (75, 'Control de incendio en área industrial', true, '52', -42.8, -74.5),
+                                                                                               (76, 'Control de incendio en zona urbana', true, '98', -45.5, -72.5),
+                                                                                               (77, 'Despliegue de equipos de emergencia', false, '28', -44.5, -73.5),
+                                                                                               (78, 'Apoyo logístico a damnificados por sismo', true, '71', -45.0, -74.0),
+                                                                                               (79, 'Apoyo logístico a refugios temporales', true, '9', -46.0, -74.5),
+                                                                                               (80, 'Monitoreo de riesgo de inundación', false, '27', -46.5, -75.0),
+                                                                                               (81, 'Control de incendio en zona industrial', true, '44', -52.0, -70.0),
+                                                                                               (82, 'Despliegue de equipos médicos de emergencia', false, '70', -51.5, -70.5),
+                                                                                               (83, 'Monitoreo de riesgo de deslave', false, '23', -51.0, -71.0),
+                                                                                               (84, 'Evacuación de zona afectada por sismo', false, '1', -50.5, -71.5),
+                                                                                               (85, 'Control de incendio en estructuras', true, '24', -50.0, -72.0),
+                                                                                               (86, 'Despliegue de equipos médicos de emergencia', true, '63', 55.7558, 37.6176),
+                                                                                               (87, 'Evacuación preventiva por riesgo de inundación', true, '59', 55.7558, 37.6176),
+                                                                                               (88, 'Despliegue de equipos de emergencia', false, '60', 55.7558, 37.6176),
+                                                                                               (89, 'Coordinación de recursos para emergencia médica', true, '80', -33.8688, 151.2093),
+                                                                                               (90, 'Apoyo logístico a refugios temporales', true, '85', 51.5099, -0.1337),
+                                                                                               (91, 'Evacuación de zona afectada por sismo', false, '51', 55.7558, 37.6176),
+                                                                                               (92, 'Coordinación de recursos para emergencia médica', true, '56', 55.7558, 37.6176),
+                                                                                               (93, 'Evacuación preventiva por sismo', false, '15', 40.7128, -74.0060),
+                                                                                               (94, 'Control de incendio en zona industrial', true, '64', 55.7558, 37.6176),
+                                                                                               (95, 'Apoyo logístico a refugios temporales', true, '7', 40.7128, -74.0060),
+                                                                                               (96, 'Despliegue de equipos médicos de emergencia', true, '62', 55.7558, 37.6176),
+                                                                                               (97, 'Apoyo logístico a damnificados por sismo', false, '53', 51.5099, -0.1337),
+                                                                                               (98, 'Apoyo logístico a damnificados por inundación', false, '14', 41.9028, 12.4964),
+                                                                                               (99, 'Apoyo logístico a damnificados por inundación', false, '46', 41.9028, 12.4964),
+                                                                                               (100, 'Control de incendio en estructuras', true, '94', 34.0522, -118.2437);
 -- ranking
 
 insert into ranking (id_ranking, id_tarea, id_voluntario, puntaje) values (1, '61', '15', 699.66);
@@ -716,7 +725,6 @@ insert into tarea_habilidad (id_tarea_habilidad, id_tarea, id_habilidad) values 
 insert into tarea_habilidad (id_tarea_habilidad, id_tarea, id_habilidad) values (98, '29', '2');
 insert into tarea_habilidad (id_tarea_habilidad, id_tarea, id_habilidad) values (99, '5', '4');
 insert into tarea_habilidad (id_tarea_habilidad, id_tarea, id_habilidad) values (100, '45', '14');
-
 
 -- poblar geom en tarea
 UPDATE tarea
