@@ -32,10 +32,11 @@ public class RegionRepositoryImpl implements RegionRepository{
     @Override
     public RegionEntity findById(Long id) {
 
-        String sqlQuery = "SELECT * FROM region WHERE id_region = :id_region";
+        String sqlQuery = "SELECT * FROM region WHERE id = :id";
+
         try(Connection con = sql2o.open()){
             return con.createQuery(sqlQuery)
-                    .addParameter("id_region", id)
+                    .addParameter("id", id)
                     .executeAndFetchFirst(RegionEntity.class);
         }
         catch(Exception e){
@@ -43,48 +44,45 @@ public class RegionRepositoryImpl implements RegionRepository{
             return null;
         }
     }
-
+    // /region/{id}/tareas
     @Override
     public RegionEntity create(RegionEntity region) {
-        try(Connection connection = sql2o.beginTransaction()){
+        try (Connection connection = sql2o.beginTransaction()) {
 
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            connection.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
+            // ST_GeomFromText(:geom, 4326)
+            String query = "INSERT INTO region (id, nombre, geom) VALUES (:id, :nombre, :geom)";
 
-            String query = "INSERT INTO region (id_region, name) VALUES (:id_region, :name)";
-            connection.createQuery(query)
-                    .addParameter("id_region", region.getId_region())
-                    .addParameter("name", region.getName())
-                    .executeUpdate();
-            connection.commit();
-            return region;
-        }
-        catch(Exception e){
+            // Verificar si la geometría no es nula antes de ejecutar la consulta
+            if (region.getGeom() != null) {
+                connection.createQuery(query)
+                        .addParameter("id", region.getId_region())
+                        .addParameter("nombre", region.getName())
+                        .addParameter("geom", region.getGeom())
+                        .executeUpdate();
+                connection.commit();
+                return region;
+            } else {
+                // Manejar el caso en que la geometría es nula
+                System.out.println("La geometría es nula");
+                return null;
+            }
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;
         }
-
     }
+
+
 
     @Override
     public void update(RegionEntity region) {
         try(Connection connection = sql2o.beginTransaction()){
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            connection.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
-
-
-            String query = "UPDATE region SET name = :name WHERE id_region = :id_region";
+            String query = "UPDATE region SET name = :name WHERE id = :id";
             connection.createQuery(query)
-                    .addParameter("id_region", region.getId_region())
-                    .addParameter("name", region.getName())
+                    .addParameter("id", region.getId_region())
+                    .addParameter("nombre", region.getName())
                     .executeUpdate();
             connection.commit();
         }
@@ -101,16 +99,11 @@ public class RegionRepositoryImpl implements RegionRepository{
 
         try (Connection connection = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            String username = authentication.getName();
-            String sqlSet = "SELECT set_tbd_usuario(:username)";
-            connection.createQuery(sqlSet)
-                    .addParameter("username", username)
-                    .executeScalar();
 
-            String query = "DELETE FROM region WHERE id_region = :id_region";
+            String query = "DELETE FROM region WHERE id_region = :id";
 
             connection.createQuery(query)
-                    .addParameter("id_region", id)
+                    .addParameter("id", id)
                     .executeUpdate();
             connection.commit();
         }
