@@ -734,8 +734,8 @@ insert into tarea_habilidad (id_tarea_habilidad, id_tarea, id_habilidad) values 
 
 -- poblar geom en tarea
 UPDATE tarea
-SET geom = ST_SetSRID(ST_MakePoint(longitud, latitud), 4326);
+SET geom = ST_SetSRID(ST_MakePoint(longitud, latitud), 32719);
 
 -- poblar geom en emergencia
 UPDATE emergencia
-SET geom = ST_SetSRID(ST_MakePoint(longitud, latitud), 4326);
+SET geom = ST_SetSRID(ST_MakePoint(longitud, latitud), 32719);
