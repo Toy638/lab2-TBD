@@ -100,7 +100,7 @@ public class RegionRepositoryImpl implements RegionRepository{
         try (Connection connection = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-            String query = "DELETE FROM region WHERE id_region = :id";
+            String query = "DELETE FROM region WHERE id = :id";
 
             connection.createQuery(query)
                     .addParameter("id", id)

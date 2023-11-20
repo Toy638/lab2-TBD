@@ -1,41 +1,59 @@
-Bienvenido/a al manual de usuario.
+# Manual de Usuario - Entrega 2 Taller de Bases de Datos
 
+Bienvenido/a al manual de usuario para la aplicación de la entrega 2 del laboratorio de Taller de Bases de Datos.
 
--- Este documento corresponde a las instrucciones de uso y de instalación de tecnologías para poder --
--- hacer funcionar la aplicación de la entrega1 de laboratorio.                                     --
+## Requisitos de Instalación
 
+### 1. Base de Datos (PostgreSQL + PostGIS):
 
-1) Para la base de datos, se debe instalar lo siguiente:
+- PostgreSQL (versión 11+)
+- PostGIS (versión 3.4.0)
+- pgAdmin 4
 
-   -) PostgreSQL (versión 11+) + PostGIS
-   -) pgAdmin 4
-  
-   Para el backend (que fué trabajada como una API RESTful desarrollada en Spring), se debe instalar
-   lo siguiente:
+### 2. Backend (API RESTful en Spring):
 
-   -) JDK (Versión 17)
-   -) IntelliJ IDEA (tanto para backend como frontend)
-   -) Postman
+- JDK (Versión 17)
+- IntelliJ IDEA (para backend y frontend)
+- Postman
 
-   Para el frontend, se debe instalar lo siguiente:
+### 3. Frontend:
 
-   -) Vue.js (versión 2.x)
-   -) IntelliJ IDEA (tanto para backend como frontend)
+- Vue.js (versión 2.x)
+- IntelliJ IDEA (para backend y frontend)
 
+## Instrucciones de Configuración
 
-2) 
+### 2.1 Configuración de la Base de Datos:
 
-2.1) Para hacer funcionar la aplicación se debe abrir la aplicación pgAdmin4, se debe crear una nueva
-     base de datos llamada lab1TBD en pgAdmin4. Una vez creada, se debe cargar el script "dbCreate.sql"
-     para poder crear las tablas correspondientes.
+1. Abre pgAdmin4 y crea una nueva base de datos con el nombre: lastgis
 
-     Luego, se debe cargar el script "loadData.sql" para poder poblar las tablas creadas con anterioridad.
+Luego, con los siguientes scripts ubicados en la carpeta 'lab2-TBD', haz lo siguiente (en pgAdmin4):
 
-2.2) Ejecutar el Backend a través de IntelliJ para habilitar el servidor que permita la ejecución del código.
+2. Carga el script "dbCreate.sql" para crear las tablas.
+3. Carga el script "loadData.sql" para poblar las tablas.
+4. Carga el script "loadDataPolygons.sql" para agregar polígonos de las regiones de Chile.
 
+### 2.2 Ejecutar el Backend:
 
-2.3) Correr el Frontend a través de IntellIJ. Para ello se ha de abrir una terminal en la
-     carpeta “frontend” que se encuentra dentro de la carpeta “FrontEnd-TBD”. Ahí, se debe
-     ingresar el comando “npm install” y luego “npm run serve” para poder ejecutar el front
-     del código fuente.
+1. Ejecuta el backend a través de IntelliJ para habilitar el servidor.
 
+### 2.3 Ejecutar el Frontend:
+
+1. Abre una terminal en la carpeta “frontend” dentro de “FrontEnd-TBD”.
+2. Ingresa los comandos:
+
+npm install
+npm run serve
+
+3. Esto ejecutará el frontend.
+
+### 2.4 Acceder a la Aplicación:
+
+1. Ingresa con los siguientes datos:
+
+- Email: mmaccrosson2@printfriendly.com
+- Contraseña: wH6_aw
+
+2. En la barra de navegación, selecciona la opción "mapa" para filtrar tareas por región.
+
+Listo, ahora puedes utilizar de forma correcta la aplicación. ¡Gracias!
