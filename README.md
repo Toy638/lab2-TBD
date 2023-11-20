@@ -35,15 +35,21 @@ Luego, con los siguientes scripts ubicados en la carpeta 'lab2-TBD', haz lo sigu
 
 ### 2.2 Ejecutar el Backend:
 
-1. Ejecuta el backend a través de IntelliJ para habilitar el servidor.
+1. Ejecuta el backend a través de IntelliJ para habilitar el servidor. Para esto, debes dirigirte a lab2-TBD/lab1/src/main/java/com/tbd/lab1 - abrir el archivo Lab1Application.java, instalas el JDK adecuado y aprietas la opción "Build". A continuación, usas la opción de "Run" (shift + F10) y listo. El backend ahora está ejecutándose.
 
 ### 2.3 Ejecutar el Frontend:
 
 1. Abre una terminal en la carpeta “frontend” dentro de “FrontEnd-TBD”.
 2. Ingresa los comandos:
 
-npm install
+npm install @turf/turf
 npm run serve
+
+Manejo de posible error: 
+En caso de obtener un error que indique una falla con @poppers, seguir los siguientes pasos:
+	a) npm install @popperjs/core
+	b) npm cache clean --force
+	c) npm install
 
 3. Esto ejecutará el frontend.
 
