@@ -25,7 +25,10 @@ Bienvenido/a al manual de usuario para la aplicación de la entrega 2 del labora
 
 ### 2.1 Configuración de la Base de Datos:
 
-1. Abre pgAdmin4 y crea una nueva base de datos con el nombre: `lastgis`.
+1. Abre pgAdmin4 y crea una nueva base de datos con el nombre: lastgis
+
+Luego, con los siguientes scripts ubicados en la carpeta 'lab2-TBD', haz lo siguiente (en pgAdmin4):
+
 2. Carga el script "dbCreate.sql" para crear las tablas.
 3. Carga el script "loadData.sql" para poblar las tablas.
 4. Carga el script "loadDataPolygons.sql" para agregar polígonos de las regiones de Chile.
@@ -53,4 +56,4 @@ npm run serve
 
 2. En la barra de navegación, selecciona la opción "mapa" para filtrar tareas por región.
 
-Listo, Ahora puedes utilizar de forma correcta la aplicación. ¡Gracias!
+Listo, ahora puedes utilizar de forma correcta la aplicación. ¡Gracias!
