@@ -1,4 +1,4 @@
-drop table eme_habilidad, emergencia, habilidad, institucion, ranking, region, tarea, tarea_habilidad, usuario, vol_habilidad, voluntario
+
 CREATE EXTENSION postgis;
 
 -- Modificada la tabla de "institución" para permitir que una institución tenga muchos usuarios
