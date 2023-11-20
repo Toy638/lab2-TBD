@@ -109,7 +109,7 @@ public class TareaRepositoryImpl implements TareaRepository{
 
     @Override
     public void update(TareaEntity tarea) {
-        String sqlQuery = "UPDATE tarea SET asunto_tarea = :asuntoTarea, id_emergencia = :idEmergencia, estado_tarea = :estadoTarea, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 4326) WHERE id_tarea = :idTarea";
+        String sqlQuery = "UPDATE tarea SET asunto_tarea = :asuntoTarea, id_emergencia = :idEmergencia, estado_tarea = :estadoTarea, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 32719) WHERE id_tarea = :idTarea";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 

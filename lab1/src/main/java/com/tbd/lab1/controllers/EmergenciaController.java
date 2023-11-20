@@ -58,4 +58,7 @@ public class EmergenciaController{
         return new ResponseEntity<>(emergencia, HttpStatus.OK);
     }
 
+
+
+
 }

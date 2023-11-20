@@ -40,7 +40,7 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
         String username = authentication.getName();
 
         String sqlQuery = "INSERT INTO emergencia (id_emergencia, asunto, fecha, descripcion, direccion, activa, id_institucion, latitud, longitud, geom) " +
-                "VALUES (:id_emergencia, :asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion, :latitud, :longitud, ST_GeomFromText(:point, 4326))";
+                "VALUES (:id_emergencia, :asunto, :fecha, :descripcion, :direccion, :activa, :id_institucion, :latitud, :longitud, ST_GeomFromText(:point, 32719))";
 
         try (Connection con = sql2o.beginTransaction()) {
 
@@ -93,7 +93,7 @@ public class EmergenciaRepositoryImpl implements EmergenciaRepository{
 
     @Override
     public EmergenciaEntity update(EmergenciaEntity emergencia) {
-        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion = :idInstitucion, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 4326) WHERE id_emergencia = :idEmergencia";
+        String sqlQuery = "UPDATE emergencia SET asunto = :asunto, descripcion = :descripcion, direccion = :direccion, fecha =:fecha, activa = :activa, id_institucion = :idInstitucion, latitud = :latitud, longitud = :longitud, geom = ST_GeomFromText(:point, 32719) WHERE id_emergencia = :idEmergencia";
         try (Connection con = sql2o.beginTransaction()) {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
